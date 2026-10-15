@@ -6,6 +6,8 @@
 
 一个集 AI 生图、图片拆层和图层编辑于一体的轻量网页工作台。
 
+**在线访问：[https://cover.aigce.com/](https://cover.aigce.com/)**
+
 [在线体验](https://cover.aigce.com) · [快速开始](#快速开始) · [Cloudflare 部署](#cloudflare-部署) · [数据与隐私](#数据与隐私)
 
 </div>
