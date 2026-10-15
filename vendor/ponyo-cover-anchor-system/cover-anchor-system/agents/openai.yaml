@@ -1,0 +1,5 @@
+interface:
+  display_name: "波妞小红书强钩子爆款封面"
+  short_description: "小红书爆款封面强钩子、涂鸦与阳光拼贴设计"
+  brand_color: "#E74C3C"
+  default_prompt: "Use $cover-anchor-system to design a finished Xiaohongshu cover with a strong hook, visual anchor, and no hard-coded watermark."

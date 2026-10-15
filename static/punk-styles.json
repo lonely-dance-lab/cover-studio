@@ -1,0 +1,1713 @@
+{
+  "version": "v1.0.0-mit",
+  "source": "https://github.com/adrianpunk/Punk-Skill/tree/v1.0.0-mit",
+  "styles": [
+    {
+      "id": "anthropic-research-style",
+      "name": "Anthropic Research 风格",
+      "description": "以 Anthropic Research 风格为识别名称，使用纯色背景、衬线主标题、手绘线稿、抽象隐喻和大面积留白形成研究报告式封面。名称用于指代视觉方向，不复制 Anthropic 的 Logo、品",
+      "anchors": [
+        "restrained AI research-lab editorial cover with a large flat color field",
+        "one readable serif main title as the primary visual center",
+        "one abstract hand-drawn line metaphor derived from the topic's core value",
+        "substantial negative space with 2-4 small organic balancing shapes",
+        "fixed low-saturation palette using terracotta, black, warm gray, sage green, or haze blue"
+      ],
+      "adaptation": [
+        "landscape ratios place the title and abstract metaphor in an asymmetric editorial composition with large open space",
+        "portrait ratios keep the title dominant and the metaphor compact, with decoration occupying no more than 5% of the canvas",
+        "show only the main title by default; when the user supplies a subtitle, keep it to one short supporting line",
+        "convert the topic into a conceptual structure, path, node system, outline, or spatial relation instead of drawing the topic object literally"
+      ],
+      "preserve": [
+        "one main title, one core metaphor, and one visual center",
+        "flat background selected from the fixed color system without gradients",
+        "serif-led editorial typography with restrained sans-serif or monospace support text",
+        "sparse hand-drawn linework and stable negative space"
+      ],
+      "avoid": [
+        "Anthropic logos, wordmarks, signatures, or copied official layouts",
+        "marketing-poster hierarchy, product-launch visuals, or commercial template feel",
+        "robots for AI, ordinary computers for web topics, or book piles for knowledge topics",
+        "cyberpunk, neon, blue glow, 3D rendering, gradients, dense infographics, or large text blocks"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张 Anthropic Research 风格的极简视觉封面。画面像 AI 研究实验室发布的一页研究报告或设计研究手册：纯色背景、大面积留白、衬线主标题、一个抽象手绘隐喻和少量平衡色块。保持研究编辑感，不做营销海报、科技发布会视觉或赛博朋克画面。"
+        },
+        {
+          "title": "风格基因",
+          "body": "### 背景颜色系统\n\n每张图只使用以下一个背景方案。用户未指定时使用方案 A，不随机切换。\n\n- 方案 A：背景 `#D97757`，文字 `#1A1A1A`。\n- 方案 B：背景 `#1A1A1A`，文字 `#EFEAE0`。\n- 方案 C：背景 `#D8D5CF`，文字 `#1A1A1A`。\n- 方案 D：背景 `#B8C9B8`，文字 `#1A1A1A`。\n- 方案 E：背景 `#8FA9C7`，文字 `#1A1A1A`。\n\n背景保持大面积纯色。不要渐变、霓虹、发光纹理或科技蓝光。\n\n### 版式与字体\n\n- 使用杂志编辑排版和大面积留白。主标题是第一视觉，也是画面的结构中心。\n- 默认只显示一个主标题。用户提供副标题时，最多保留一行，字级低于主标题。\n- 不添加栏目标签、Logo、品牌署名、页码、日期、网址或无意义英文说明。\n- 主标题使用高对比衬线字体气质，参考 Source Han Serif、Georgia 或研究杂志标题的粗细变化和书籍感。\n- 辅助文字使用 Inter 一类简洁无衬线字体。等宽字体只用于少量结构文字，可参考 JetBrains Mono。\n- 不堆叠字体，不把文字做成产品发布会口号或商业广告标题。\n\n### 抽象隐喻\n\n- 从核心表达提炼一个视觉隐喻，只保留一个主要视觉中心。\n- 不直接画主题物品。使用手绘线稿、抽象结构、概念符号、节点、路径、轮廓、边界或空间关系。\n- AI 主题不要画机器人。可以使用人类轮廓、智能节点和思考路径。\n- 网页主题不要画普通电脑。可以把数字空间和网页模块处理成空间结构。\n- 知识主题不要画书堆。可以让信息节点汇聚成知识结构。\n- 其他主题也按同一原则处理：先判断价值和关系，再选择结构，不把主题名词直接变成图标。\n\n### 装饰与颜色\n\n- 加入 2-4 个无功能色块，只用于平衡构图，总面积不超过画面的 5%。\n- 色块可以是不规则有机形、手绘圆形、小矩形或纸张形状。不要均匀排列，不要做成 UI 按钮，不要形成大量散点。\n- 装饰色从 `#EFEAE0`、`#CD6F47`、`#6B8A6F`、`#8FA9C7`、`#1A1A1A` 中选择。\n- 插画线稿使用 `#1A1A1A`，浅色纸张使用 `#EFEAE0`。强调色最多一种，并保持低饱和。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题、抽象隐喻和留白共同形成一个视觉中心，不把标题贴在无关插画上。\n- 默认只显示一个主标题。用户提供副标题时，最多保留一行，并放在主标题附近的留白区域。\n- 线稿、节点、路径或纸张形状可以接近、穿过或回应标题，但不能遮挡标题。\n- 装饰元素只用于平衡标题和隐喻之间的空间，不承担额外信息。"
+        },
+        {
+          "title": "生成前检查",
+          "body": "- 是否只有一个主标题、一个核心隐喻和一个视觉中心。\n- 是否使用一个固定纯色背景方案。\n- 是否保留足够留白。\n- 装饰元素是否只有 2-4 个且总面积不超过 5%。\n- 是否没有品牌 Logo、署名、页码、日期或无意义说明。\n- 是否避开了主题物品的直接图解。\n- 是否没有复杂信息图、3D、渐变、霓虹、科技蓝光或商业模板感。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不复制 Anthropic 的 Logo、字标、品牌署名、官网组件或固定官方版式。\n- 不要营销海报、科技发布会、商业模板或 PPT 封面。\n- 不要机器人、普通电脑、书堆、随机芯片、随机电路和无关实验器材。\n- 不要复杂信息图、大量文字、3D 效果、渐变、霓虹和科技蓝光。\n- 不要多种强调色、均匀装饰阵列、UI 按钮状元素或大量散点。"
+        }
+      ]
+    },
+    {
+      "id": "avant-retro-architecture-poster",
+      "name": "先锋复古建筑海报",
+      "description": "先锋复古建筑海报风格。以 20 世纪中期建筑旅行海报、新构成主义秩序、现代编辑设计和丝网印刷质感，把一座建筑转译成色块完整、轮廓清晰、留白开阔的封面或海报。",
+      "anchors": [
+        "mid-century retro architectural travel poster",
+        "neo-constructivist spatial order and bold architectural massing",
+        "one recognizable core building as the sole visual center",
+        "large flat solid-color background with generous negative space",
+        "2-3 complete color planes inside the building body",
+        "restrained archival or editorial typography with subtle screen-print texture"
+      ],
+      "adaptation": [
+        "choose camera angle, crop, subject position, and composition from the building's silhouette, proportion, massing, and aspect ratio",
+        "building color planes should follow major structural faces, light and shadow, roof and wall, tower and base, or foreground and rear volume",
+        "title and optional metadata should sit in negative space or along the building's contour without overtaking the building"
+      ],
+      "preserve": [
+        "one core building only, instantly recognizable at cover scale",
+        "adaptive viewpoint and composition instead of a fixed low-angle poster formula",
+        "solid pure-color background and open negative space",
+        "building body carries the richest color relationships",
+        "simplified hard-edged light, shadow, massing, and screen-print grain"
+      ],
+      "avoid": [
+        "fixed yellow, teal, red-blue-cream, or repeated preset palette",
+        "decorative circles, triangles, sun disks, radial lines, random diagonal graphics, or complex collage",
+        "photorealistic architecture rendering, detailed windows, glass reflections, metallic highlights, or dense city skyline",
+        "invented coordinates, city names, countries, years, slogans, translations, or travel copy"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张先锋复古彩色新构成主义建筑海报。风格核心是 20 世纪中期复古建筑旅行海报、现代编辑设计、新构成主义空间秩序、大面积纯色背景、建筑本体承担主要色彩、完整大色面、清楚明暗结构、开阔留白和克制丝网印刷质感。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 生成前先理解当前建筑的识别轮廓、纵横比例、体块关系、结构层级、重要结构面、适合完整展示还是局部放大、最合适观察角度、主体位置和综合色调；不要输出分析过程。\n- 每张图只保留一个核心建筑，建筑必须是唯一视觉中心，可以完整展示、适度裁切或局部放大，但必须一眼可识别。\n- 机位和构图必须根据建筑自适应选择：正面平视、正面中轴、侧前方透视、侧面视角、轻微俯视、高位远眺、斜向俯视、低机位仰视、中距离完整展示、远距离环境展示、近距离局部放大、横向全景或建筑群中的单一核心建筑。\n- 高塔、摩天楼和纪念性塔楼可用平视远眺、侧前方透视、仰视或完整纵向展示；宫殿、车站、博物馆和横向公共建筑可用正面中轴、平视、侧前方透视或轻微俯视；山地、古城和层叠建筑可用斜向俯视、高位观察或远近层级；长城、桥梁、城墙和线性建筑可用横向全景、路径透视、俯视或斜向延伸；标志性屋顶、球体、拱门、立面或入口可局部放大。\n- 建筑位置由轮廓、画幅和文字关系决定，可在中央、中间偏左、中间偏右、下方、一侧、对角线区域、留白旁边或被边缘适度裁切。不要机械固定低机位、仰视、中间偏右、从底部冲出、巨大近景或固定对角线。\n- 背景必须是单一纯色，承担综合色调和留白，不出现复杂渐变、天空照片、云层、多色色块拼接、巨大太阳、放射线、复杂几何图案或城市景观。\n- 建筑本体是颜色最丰富、最吸引人的部分，内部使用 2-3 种完整大面积颜色重新组织，颜色作用于主立面与侧立面、受光面与阴影面、塔身层级、屋顶与墙体、球体与支撑结构、主体与基座、前部与后部体块、台阶与平台等大结构区域。\n- 全图控制在 4-5 种主要颜色：1 种大面积纯色背景、2 种建筑主体颜色、1 种深色结构或阴影色、必要时 1 种极小面积跳色或高光色。背景约占 55%-75%，建筑主体色合计约占 20%-35%，深色结构约占 8%-15%，跳色约占 3%-8%。\n- 每次根据建筑结构、年代、地域、气质和构图重新建立独立配色，不套用固定色卡，不照搬参考图颜色，不机械轮换有限方案。色彩应鲜明、复古但不灰暗、先锋但不杂乱、意外但成立。\n- 建筑简化为关键识别特征：总体轮廓、主要比例、顶部形态、屋顶、塔尖、球体、塔身、立面、墙体、柱体、台阶、拱门、层级和核心结构转折。删除或弱化密集门窗、幕墙网格、栏杆、瓦片、屋檐纹样、雕刻、小装饰、真实材质、玻璃反射、金属反光和复杂灯光。\n- 明暗使用简洁硬边关系：一个主要受光面、一个主要阴影面、明确结构转折、少量硬边投影和必要高光。明暗服务于体量、层级、方向、空间和识别。\n- 前景和环境不是必需元素，只在有助于建筑识别、空间关系或构图时加入少量基座、广场、台阶、道路、山体、水面、墙体、屋顶、少量城市剪影或必要附属体块。前景最多保留 2-3 个主要体块，使用已有颜色，不抢核心建筑。\n- 加入克制的细微纸张颗粒、丝网印刷网点、轻微油墨不均、自然褪色和极轻微套色偏移。复古感来自印刷介质，不要把画面整体做黄、做脏、做暗或做低清晰度。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 文字采用克制的建筑档案式或现代编辑式排版，最多出现建筑名称 1 处、副标题最多 1 处，英文名称、城市、国家或坐标仅在用户明确提供时使用。\n- 不得自行增加英文翻译、国家名称、城市名称、坐标、年份、旅游口号、宣传文案、功能说明、品牌信息或无关小字。\n- 文字可放在右上角、左上角、建筑旁留白、画面边缘或与建筑轮廓对应的位置。文字位置由构图和留白决定，不固定。\n- 可使用小型档案式排版、高窄无衬线字体、粗重几何字体、适度字距、整齐边缘对齐和少量横线或分隔符。\n- 文字总面积不超过画面的 8%，建筑始终比文字更重要。副标题为空时，只保留建筑名称。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要固定机位、固定低视角、固定建筑中间偏右、固定黄色背景、固定蓝绿色背景或固定红蓝米白组合。\n- 不要让鲜明颜色只出现在背景、天空、地面、前景色块或装饰图形；建筑不能整体米白、灰色、沙色、银色、黑色、现实原色或无色剪影。\n- 不要把建筑切成大量碎色块，不要给每层、每扇窗或每个小部件分别上色。\n- 不要依赖无关圆形、三角形、放射线、斜线、复杂拼贴或随意几何色块制造设计感。\n- 不要做成精细建筑插画、照片写实、建筑 3D 效果图、复杂城市天际线、信息图布局或多建筑抢主体。\n- 不要使用荧光色、电子霓虹色、灰暗发闷的综合色调、严重褪色、脏污纸面、破损海报、大面积划痕、模糊轮廓或过度噪点。"
+        }
+      ]
+    },
+    {
+      "id": "black-midcentury-modernist-cover",
+      "name": "黑色复古现代主义封面",
+      "description": "黑色复古现代主义封面是一种黑色主导、三色克制、图形化强的复古编辑插画风格。它融合 20 世纪中期现代主义书封、复古杂志封面、黑色电影气质和几何平面设计语言，把主题提炼成一个清晰主体、一个色彩重点和一组",
+      "anchors": [
+        "black-dominant mid-century modern editorial illustration",
+        "retro book cover, vintage magazine, noir, and geometric graphic design language",
+        "strict three-color system with black, warm white, and one vivid accent color",
+        "one simplified core subject, one visual center, and one main title group",
+        "flat geometric shapes, silhouette-like light and shadow, restrained screen-print grain"
+      ],
+      "adaptation": [
+        "adapt layout to the selected aspect ratio, including image-left text-right, text-left image-right, centered subject, upper-lower split, or single-subject poster composition",
+        "keep one core subject and one accent-color focus, with generous black negative space where useful",
+        "horizontal covers may use strong side-by-side subject and typography balance",
+        "vertical covers should prioritize a compact poster-like hierarchy with the title and subject clearly separated"
+      ],
+      "preserve": [
+        "black as the dominant color across background or subject",
+        "no more than three colors: black, white or warm ivory, and one vivid accent",
+        "mid-century modern retro editorial illustration character",
+        "strong, readable title and concise supporting text",
+        "full-bleed edges with no card frame, border, rounded white margin, or outer pale band"
+      ],
+      "avoid": [
+        "neon cyberpunk, modern blue-purple technology gradients, glass effects, metallic 3D, or complex lighting",
+        "multicolor palettes, multiple bright accents, complex gradients, or high-saturation colorful poster treatment",
+        "photorealism, anime style, 3D rendering, dense mechanical detail, busy icon systems, or internet-ad clutter",
+        "information overload, many labels, parameter panels, serial numbers, or explanatory text"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张黑色复古现代主义编辑插画封面。整体采用 20 世纪中期现代主义复古书封、复古杂志封面、黑色电影和几何平面设计语言。画面黑色占主导，气质复古高级、理性克制、简洁鲜明、几何概括，并具有强烈封面感。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 全图严格控制在 3 种颜色以内：黑色作为绝对主色，白色或米白色作为辅助色，只允许 1 个鲜明点缀色。\n- 黑色应占据大部分背景或主体，形成明确的黑白关系和复古电影感。白色或米白色用于标题、人物肤色、主体局部、高光或少量排版信息。\n- 点缀色只能从红、绿、蓝、橙、紫或黄色中选择一种，并且只用于局部主体、标题重点字、几何图形或少量强调元素。不要同时出现多个亮色。\n- 根据主题自动选择最有代表性的核心画面，不固定为侦探、电影、泰式按摩或任何单一题材。\n- 每张图只保留一个核心主体、一个视觉中心、一个主要色彩重点和一组主标题信息。主体与文字比例协调，结构清楚，不堆满画面。\n- 主体使用几何化轮廓、扁平大色块、剪影式明暗、简化五官与细节、少量夸张比例和复古编辑插画表现。\n- 人物、产品、建筑、动物、机器人、服务场景或抽象概念都要被概括成清晰、简洁、容易识别的视觉符号。\n- 可以加入克制的复古纸张颗粒、丝网印刷、旧书封或轻微油墨磨损质感。质感必须轻微，不能脏乱、严重褪色或降低清晰度。\n- 画面必须满版出血，四边内容直接延伸到画布边缘。不要白色边框、卡片式外框、圆角白边、四周留白或外圈浅色包边。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题必须醒目，是画面的第一视觉中心之一，并与主体共同形成封面主结构。\n- 中文主标题使用有力量感、书封感或编辑感的字体，可偏粗重宋体、标题宋、几何黑体或复古招牌式字体；英文副标题可使用优雅衬线体或简洁大写字体。\n- 辅助文字尽量少，只保留必要信息。除主标题、副标题和一个辅助短句外，不出现其他说明文字。\n- 根据画幅比例自适应安排构图，可选择左图右字、左字右图、中心主体两侧信息、上下分区或偏单主体海报式构图。\n- 横版封面可用大面积黑色负空间承载标题，让核心主体在一侧形成清晰戏剧关系。竖版封面应让标题和主体上下或中心错落，保持书封式秩序。\n- 标题必须清楚可读，避免被主体遮挡、纹理吞没或装饰元素干扰。副标题与辅助短句应明显弱于主标题。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 禁止霓虹赛博风、现代科技蓝紫渐变、多彩配色、复杂光效、玻璃质感、金属 3D 和普通互联网宣传海报感。\n- 禁止使用多个亮色、高饱和多彩、复杂渐变或额外杂色。\n- 禁止写实摄影、3D 渲染、动漫风、复杂机械细节、大量无关装饰和密集背景。\n- 禁止大量标签、参数、图标、编号、说明文字、复杂 UI 面板和信息过载。\n- 禁止白色边框、卡片式外框、圆角白边、四周留白和外圈浅色包边。"
+        }
+      ]
+    },
+    {
+      "id": "black-red-silhouette",
+      "name": "黑红剪影",
+      "description": "黑红剪影是一种高冲击、低信息噪声的极简封面风格。画面像一块巨大的红色舞台屏幕，主体以黑色图形剪影出现，白色只用于标题、少量高光和关键点睛。",
+      "anchors": [
+        "strict red, black, and white color system",
+        "large flat red stage-like background with no gradients or textures",
+        "black silhouette subject as the dominant visual focus",
+        "sparse white title, highlights, and key accent points only",
+        "one clear scene, one subject action, and one direct metaphor"
+      ],
+      "adaptation": [
+        "main subject should occupy the central, center-right, or lower center area with a strong black silhouette",
+        "title should stay readable but restrained, avoiding competition with the visual subject",
+        "horizontal covers should place text left or right while preserving the silhouette scene as first visual focus",
+        "vertical covers should keep title at the top or bottom and make the central silhouette the absolute focus"
+      ],
+      "preserve": [
+        "red, black, and white only",
+        "clean flat shapes and strong silhouettes",
+        "subject-first composition",
+        "simple, direct, immediately legible metaphor"
+      ],
+      "avoid": [
+        "blue, purple, green, brown, dirty gray, metallic colors, or extra hues",
+        "gradients, neon glow, cyber blue light, paper grain, distressing, grime, or retro wear",
+        "realistic photography, detailed faces, complex UI panels, or infographic layouts",
+        "typography becoming the only or dominant visual subject"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张黑红剪影风格封面。整体只使用红、黑、白三种颜色：红色负责空间和情绪，黑色负责主体和剪影，白色只用于标题、少量高光和关键点睛。画面必须极简、干净、有冲击力，像一块巨大的红色舞台屏幕，主体像舞台动画里的黑色图形符号。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 只使用红、黑、白三种颜色。红色占主要面积，黑色形成主体轮廓，白色只做标题、少量高光和关键点睛。\n- 背景是大面积纯红空间，不使用复杂背景、杂色、渐变、做旧、纸张颗粒、脏污纹理或复古磨损。\n- 每张图只保留一个核心场景、一个主体动作和一个清晰隐喻。\n- 主体必须以黑色剪影为主，轮廓清楚，细节克制，不表现写实人物脸，不追求真实摄影感。\n- 主体场景必须比文字更重要，远看先看到黑色剪影和红色空间，近看再读标题。\n- 工具教程类优先使用“人正在使用工具”的场景表达。\n- 电影主题类优先使用最经典的人物姿态、关系或标志性场景表达。\n- 金融主题类优先使用牛、曲线、上升结构、观察者等简洁符号表达。\n- 速度主题类优先使用车辆、道路、远方城市、速度线表达。\n- AI 主题类优先使用人、屏幕、脑形符号、光标或极简界面表达。\n- 不为了设计感强行加入大手、锁链、机械流水线或复杂装置；只有这些元素和主题高度相关时才使用。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题使用白色或暖白色，字体清晰、简洁、有力量。\n- 标题必须清楚可读，但保持克制，只作为辅助信息，不成为画面主角。\n- 副标题比主标题小一档，只作为补充说明。\n- 除主标题和副标题外，不出现其他文字，不做信息图，不堆说明文字，不出现复杂 UI 文案。\n- 横版封面中，标题放在居中偏左或居中偏右，根据主体位置避让；主体场景必须是第一视觉。\n- 竖版封面中，标题放在最上方居中或最下方居中，不占据过多空间；中间主体必须成为绝对主视觉。\n- 中文使用现代黑体、几何黑体、粗黑体或窄体黑体；英文使用清晰有力的 sans-serif、grotesk 或 condensed sans-serif。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 禁止出现蓝色、紫色、绿色、棕色、灰脏色、金属色或任何额外杂色。\n- 禁止复杂渐变、霓虹光效、赛博蓝光、真实摄影感、过多 UI 面板和复杂信息图。\n- 禁止复古做旧颗粒、脏污纹理、纸张颗粒、磨损边缘或仿旧印刷效果。\n- 禁止复杂背景、复杂人物五官、写实人脸、装饰性细节堆叠。\n- 禁止让文字压过主体画面，或让文字成为唯一主视觉。"
+        }
+      ]
+    },
+    {
+      "id": "black-white-etching-editorial-cover",
+      "name": "黑白复古蚀刻版画封面",
+      "description": "把标题、主题和核心意思转译成一张具有强烈概念感的纯黑白封面。画面借用十九世纪铜版画、蚀刻版画、木口木刻、古典科学插图和超现实编辑插画的视觉语法：灰阶不依赖数字渐变，而由排线、交叉排线、点描和雕刻线条生",
+      "anchors": [
+        "strict black, white, and line-made gray values with strong tonal contrast",
+        "19th-century copperplate engraving, etching, wood engraving, and antique scientific-illustration marks",
+        "fine parallel hatching, cross-hatching, stippling, engraved contours, and visible handmade print texture",
+        "one dominant conceptual or surreal editorial metaphor rather than a literal keyword collage",
+        "clear silhouette and visual center from a distance, with dense craft detail revealed up close",
+        "intentionally uneven information density: refined focal detail, simplified support areas, and controlled pure-black fields"
+      ],
+      "adaptation": [
+        "let the ratio determine the scene, perspective, subject scale, and reading path; never crop or stretch a finished composition",
+        "use wide ratios for environmental narrative and horizontal motion, portrait ratios for vertical scale and descent/ascent, and square ratios for a concentrated emblematic encounter",
+        "if text is requested, render the complete title as restrained engraved editorial type integrated into the print; if the user explicitly requests a pure-image cover or `文字模式: 无文字`, use the title only to guide the metaphor and do not render text",
+        "preserve one strong visual memory point while allowing the metaphor, viewpoint, scale, material, quantity, and physical logic to change from cover to cover"
+      ],
+      "preserve": [
+        "monochrome print language with no color accents, neon, glow, or smooth digital gradients",
+        "one legible core silhouette and one primary metaphor with a clear spatial relationship",
+        "authentic engraved marks: hatching, cross-hatching, stippling, etched contours, and tactile paper/ink irregularity",
+        "high contrast, deliberate negative space, and non-uniform detail density",
+        "a restrained, mysterious, rational, philosophical, and surreal editorial temperament"
+      ],
+      "avoid": [
+        "obvious modern 3D rendering, plastic surfaces, glossy CGI, cheap cyberpunk, or generic AI concept-art polish",
+        "keyword-object piles, multiple unrelated symbols, stock illustration composition, or decorative filler",
+        "flat black-and-white vector art, comic-book inking, smooth airbrush shading, watercolor, or colored printmaking",
+        "unreadable title lettering, fabricated editorial filler, excessive small text, logos, watermarks, grids, contact sheets, or e-commerce layout"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "你是一名擅长铜版画、蚀刻版画、木刻、古典科学插图与超现实编辑插画的封面艺术家。请根据标题、主题和核心意思，创作一张具有强烈概念感和视觉辨识度的纯黑白封面。\n\n你的任务不是把关键词逐个画成物体，也不是套用一张普通的 AI 概念图，而是先理解内容真正表达的观点、矛盾、关系或问题，再寻找一个能够承载它的场景、动作、空间结构、尺度关系或视觉隐喻。画面可以具象、象征或超现实，但必须让视觉逻辑与内容保持清晰关联。"
+        },
+        {
+          "title": "内容理解与概念转译",
+          "body": "- 先提炼主题中最值得被看见的核心关系，不要停留在标题名词的字面对应物。\n- 优先寻找一个强核心概念，只保留一个主视觉隐喻。人物、环境、物体、建筑、机械、生物、自然或抽象结构都可以成为主体，但不要同时堆叠多套无关符号。\n- 可以改变现实世界中的尺度、空间、结构、数量、方向、功能、材质、位置和因果逻辑，让熟悉的事物产生陌生感。\n- 画面应当第一眼制造兴趣和想象空间；在知道标题和核心意思后，观者应能理解主体为什么这样安排。\n- 不要因为主题涉及 AI 就默认添加机器人、芯片或电脑；不要因为主题涉及认知就默认添加大脑；不要因为主题涉及学习就默认添加书。是否使用这些元素必须由具体内容决定。"
+        },
+        {
+          "title": "版画媒介与黑白系统",
+          "body": "- 整体固定为纯黑、纯白和由线条密度形成的灰阶。禁止任何彩色、棕褐色、蓝色、局部染色和数字渐变。\n- 视觉参考十九世纪铜版雕刻、蚀刻、木口木刻、古典科学版画、古董插画和超现实编辑插画。\n- 使用细密平行排线表现方向和明暗，使用交叉排线建立体积和重量，使用点描表达雾气、远景、纸张、皮肤、石材和颗粒，用带有手工痕迹的雕刻线勾勒轮廓与结构。\n- 灰色必须来自线条、点和墨量的组织，而不是平滑的灰色填充或照片滤镜。允许局部线条断续、密度变化、轻微套印偏差和纸墨不均匀，但整体要干净、有秩序。\n- 保持强烈黑白对比。允许大面积纯黑作为背景、洞口、阴影、未知区域或视觉重心，也允许主体和隐喻发生处拥有极复杂的精细刻痕。\n- 材质通过线条方向、间距、粗细、断续、交叉方式和密度来区分，不使用塑料高光、金属 CGI 反射或平滑空气刷。"
+        },
+        {
+          "title": "构图与空间",
+          "body": "- 先建立远看清晰的整体轮廓、视觉中心和空间层次，再把精细排线集中到主体、动作、关键结构和隐喻发生的位置。\n- 根据比例重新组织画面，不要先做一张固定构图再机械裁切、拉伸、补边或塞入画框。横向画幅适合环境叙事、水平运动和左右关系；纵向画幅适合巨大主体、垂直尺度、上升或坠落；方形画幅适合集中冲突、局部特写和象征性构图。\n- 可以使用中心、偏心、对称、非对称、近景、远景、俯视、仰视、平视或强透视，但必须有一个明确的视觉主轴。\n- 不同区域使用不同信息密度：主体和关键区域精细，次要区域简化、淡出或留黑。避免平均铺满画面，也不要为了填空而添加装饰。\n- 让黑白关系、线条密度、空间距离和光线共同形成前中后景。支持区域可以安静留白，留白是构图参与者而不是未完成区域。"
+        },
+        {
+          "title": "纯图与文字模式",
+          "body": "- 标题、主题和核心意思始终参与概念判断，但不必自动把标题画进图里。\n- 当输出模式为“纯图”，或用户明确要求“纯图封面”“无文字”时，画面中禁止出现标题、解释句、标签、品牌、页码、伪造图注和无意义小字；只用视觉关系表达主题。\n- 当输出模式要求完整标题、核心标题或预留文字区时，文字使用克制的编辑排版，并像版画中的刻印标题、图注或版面标识，与黑白纸墨和排线共享同一视觉系统。\n- 文字必须准确、清楚、没有错字、乱码或虚构出版信息。标题不应被复杂纹理遮蔽，也不应被主体裁切到无法识别。"
+        },
+        {
+          "title": "氛围与观看层次",
+          "body": "- 整体气质保持克制、神秘、深邃、理性、超现实和具有思考感，再根据内容调整为宏大、孤独、压迫、未知、荒诞、奇异、诗意、冷静、庄严或探索感。\n- 远看应先看到一个有力的黑白剪影和明确的视觉中心；近看再发现排线、交叉排线、点描、雕刻纹理、纸张颗粒和空间叙事。\n- 最终效果应介于编辑插画、哲学书籍插图、复古科学版画和超现实艺术之间。要有传统版画的精密感，同时能够承载现代、未来、哲学或超现实主题。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要现代 3D 渲染感、塑料感、廉价赛博朋克感、普通 AI 概念图感、光滑数字插画感或商业素材库感。\n- 不要彩色、霓虹、发光、渐变、卡通、彩铅、水彩、油画厚涂、纯矢量扁平图或漫画式粗黑描边。\n- 不要把大量无关象征物堆在一张图里，不要多个同等权重主体，不要平均填满背景，不要凭空增加机器人、芯片、大脑、书本等惯用符号。\n- 不要标题缺失、错字、乱码、无法阅读的过小文字、伪造品牌和无语义的装饰性编辑信息。\n- 不要输出解释、分析、备选方案、网格、拼图、联系表、样机展示或多张成图。每个目标比例只生成一张独立最终封面。"
+        },
+        {
+          "title": "最终标准",
+          "body": "画面必须同时具备：清晰的远景轮廓、明确的视觉中心、单一而准确的核心隐喻、强烈的黑白对比、细密的蚀刻排线、丰富但不平均的手工纹理、克制有秩序的空间和耐看的近看细节。第一眼有悬念，第二眼能理解，整体像一张经过认真构思和手工雕刻完成的编辑封面，而不是关键词拼贴。"
+        }
+      ]
+    },
+    {
+      "id": "black-white-gray-avant-geometry",
+      "name": "黑白灰先锋几何",
+      "description": "黑白灰先锋海报、随机字体排版、随机几何母题和现代主义构成。强调克制、动态、实验性和少量强调色。",
+      "anchors": [
+        "black-white-gray avant-garde poster language",
+        "random but controlled typography composition",
+        "2-4 geometric motifs such as circles, grids, rings, line fields, ellipses, or cut planes",
+        "modernist balance, extreme negative space, or dynamic asymmetry",
+        "one tiny accent color node when useful"
+      ],
+      "adaptation": [
+        "main title should be integrated with geometric negative space, axes, edge placement, or fragmented layout",
+        "English auxiliary text should act as rotated, edge, or structural typographic support",
+        "visual metaphor should be abstracted into geometry, tension, path, field, or collision"
+      ],
+      "preserve": [
+        "black-white-gray dominance",
+        "clear main title despite experimental layout",
+        "geometric motifs balanced with typography"
+      ],
+      "avoid": [
+        "fixed left-title/right-graphic template",
+        "calligraphy, cute, cartoon, or handwriting fonts",
+        "geometry covering key title strokes"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张黑白灰先锋几何海报。风格核心是随机字体排版、随机几何母题、现代主义构成、极简留白、动态秩序和少量强调色。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 黑、白、灰为主，允许一个极小面积强调色节点。\n- 背景可随机为黑底、白底、灰底、黑白分区、大面积留白或深灰空间。\n- 版式必须有变化：中央、上下错层、斜向、环绕、四角张力、满版字体、极端留白、垂直轴、水平轴或分散式构图。\n- 每张图随机组合 2-4 种几何母题：半圆、切割圆、圆环、同心圆、模糊黑洞、漏斗线阵、透视矩形阵列、线框球体、层叠椭圆、点阵、细线网格、几何切片、灰度渐变块、透明面板、斜向切割线、波形线阵、路径线或微型强调色节点。\n- 质感可包含纸面颗粒、压印、灰度渐变、细线网格、微弱阴影和印刷误差。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题完整、准确、清晰，可采用巨型横排、竖排、横竖混排、大小反差、分散字块、沿边缘排列、旋转英文辅助或嵌入几何负空间。\n- 几何图形必须与标题共同形成平衡，而不是固定摆在标题一侧。\n- 中文使用现代黑体、几何黑体、粗黑无衬线或窄体黑体；英文使用 grotesk、neo-grotesque、condensed sans-serif 或 geometric sans-serif。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要固定为“左标题右图形”或“标题加圆形发散线”。\n- 不要使用书法体、手写体、卡通字体、可爱字体或过度扭曲字形。\n- 不要让几何图形遮住标题关键笔画。"
+        }
+      ]
+    },
+    {
+      "id": "black-white-minimal-concept",
+      "name": "黑白极简概念",
+      "description": "文字主导的黑白灰现代编辑概念海报。适合抽象观点、战略主题、哲学和批判性内容，用巨型标题、克制留白和图像隐喻形成作品集封面级视觉。",
+      "anchors": [
+        "black, white, and gray editorial restraint",
+        "giant readable title as the structural backbone",
+        "sharp grid, large negative space, and precise alignment",
+        "one accurate visual metaphor embedded in typography",
+        "light paper grain and minimal semantic accent color"
+      ],
+      "adaptation": [
+        "main title should become a wall, container, path, archive, screen, terrain, or architectural structure",
+        "subtitle and labels should be sparse modern editorial microtype",
+        "visual subject should grow from the title structure rather than sit beside it"
+      ],
+      "preserve": [
+        "high title legibility",
+        "restrained black-white-gray composition",
+        "1-3 clear metaphor anchors only"
+      ],
+      "avoid": [
+        "decorative illustration unrelated to the title",
+        "colorful poster treatment",
+        "empty big-type cover with no real metaphor"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张黑白灰现代编辑概念海报。风格核心是巨型可读标题、克制留白、锐利网格和一个准确的图像隐喻，整体像高端作品集封面或现代主义展览海报。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 黑、白、灰为主，允许极少量语义强调色。\n- 大面积留白、清晰秩序、强网格、锋利边界和轻微纸张颗粒。\n- 主标题巨大，像建筑、墙体、容器、屏幕、档案柜、港口立面或精神地貌。\n- 图像隐喻控制在 1-3 个关键锚点内，例如微缩人物、路径、门、桥、阶梯、窗口、档案、终端、断层、光束、机械结构或数据路径。\n- 图像必须从排版结构内部生长出来，而不是后贴素材。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 巨型文字承担画面骨架，完整标题、副标题、分类标签、年份、编号或账号 ID 只能作为小字系统少量出现。\n- 可以让图像嵌入文字内部、穿过字形、依附字边缘、成为字的阴影、裂缝、地面或内部空间。\n- 中文使用厚重现代黑体、几何黑体或窄体黑体；英文使用粗黑无衬线、压缩字体或现代主义字形。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要做成普通广告页或廉价商业插画。\n- 不要让隐喻空洞、只剩大字。\n- 不要使用花哨装饰、复杂配色或过度字体变形。"
+        }
+      ]
+    },
+    {
+      "id": "block-world",
+      "name": "方块世界",
+      "description": "Minecraft 式高饱和方块世界海报。主题文字被方块化重构成建筑、道路、传送门、矿洞、阶梯或场景结构，而不是后贴字幕。",
+      "anchors": [
+        "Minecraft-like voxel world",
+        "high-saturation block materials and square geometry",
+        "title reconstructed as terrain, portal, building, road, island, or mission structure",
+        "small block characters, tools, paths, signs, maps, and item panels",
+        "clean layered lighting with playful exploratory space"
+      ],
+      "adaptation": [
+        "main title should exist as real block architecture or voxel signage",
+        "subtitle and labels should appear as game UI, quest panels, signs, mini maps, or inventory items",
+        "visual metaphor should be built as a navigable voxel scene"
+      ],
+      "preserve": [
+        "all major visual elements built from blocks, pixels, voxels, or grid materials",
+        "spatial depth and clear path back to the title",
+        "bright game-world clarity"
+      ],
+      "avoid": [
+        "ordinary pixel filter over a flat poster",
+        "title pasted over a game illustration",
+        "cheap cartoon sticker collage or generic robot-tech imagery"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张 Minecraft 式高饱和方块世界视觉海报。主题文字和主视觉应被方块化重构成建筑、道路、传送门、矿洞、阶梯、岛屿或场景结构，而不是把标题贴在游戏插画上。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 高饱和、明亮、清爽、阳光，有体素世界和游戏宣传视觉的空间感。\n- 所有元素都由方块、像素、格子、体素颗粒或块状材质构成。\n- 主标题可以变成天空岛、入口、矿洞墙、方块道路、任务面板、浮空建筑、传送门或可探索地形。\n- 可加入方块人物、工具、道具、路径、地图、告示牌、能量方块、矿物、云层、草地、水面、阶梯和小型场景细节。\n- 光照可以是清晨、正午、夕阳或清透室内光，但必须干净、有层次。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题必须像真实存在于方块世界里的结构。\n- 副标题和标签可作为像素告示牌、任务面板、游戏菜单、小地图或物品栏出现。\n- 场景透视、人物尺度和路径要引导视线回到标题。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要让标题与场景分离。\n- 不要做成儿童贴纸、低质卡通或普通像素图标合集。\n- 不要把方块元素堆满到失去空间层次。"
+        }
+      ]
+    },
+    {
+      "id": "brand-collaboration-connection",
+      "name": "品牌协同连接",
+      "description": "品牌协同连接是一种用于表达两个品牌、工具或产品互相连接的极简横版封面风格。它把两个输入 Logo 转译成左右两枚高级轻拟物 3D 圆角图标，用一条丝滑渐变连接线和中心节点表现协同、集成、自动化或工作流",
+      "anchors": [
+        "two uploaded logos transformed into soft 3D rounded-square app icons",
+        "smooth bidirectional gradient connection line with a small center node",
+        "light gray-white minimal background with generous negative space",
+        "restrained enterprise product cover typography below the connection",
+        "logo-derived left and right color accents unified through the connector"
+      ],
+      "adaptation": [
+        "landscape ratios should place Logo A on the left and Logo B on the right with the connector running horizontally between them",
+        "title and subtitle sit in the lower middle area, clearly separated from the logo connector",
+        "5:2 and 16:9 ratios should preserve wide breathing room and avoid filling the canvas with interface details",
+        "title emphasis may use subtle two-color accents derived from the logos, especially on key symbols, plus signs, numbers, or short keywords"
+      ],
+      "preserve": [
+        "two distinct brand/tool icons with recognizable logo cues",
+        "one smooth connector line, one small center node, and a clear collaboration/integration relationship",
+        "clean modern enterprise product feel with premium soft-neumorphic depth",
+        "restrained palette derived from the two input logos"
+      ],
+      "avoid": [
+        "infographic diagrams, complex workflows, many arrows, charts, dashboards, or dense labels",
+        "extra logos, fake UI panels, device mockups, people, mascots, or decorative illustrations",
+        "loud gradients, cyberpunk glow, excessive shadows, glossy toy-like icons, or crowded text"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张“品牌协同 / 工具连接”主题的极简横版封面。风格核心是两个输入 Logo 被转译成左右两枚高级轻拟物 3D 圆角图标，中间用一条丝滑的双向渐变连接线相连，并用一个小节点强调连接、同步、集成或协作关系。画面保持浅灰白极简留白、干净现代、企业级产品封面气质，不做复杂信息图。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 背景使用浅灰白、微冷白或非常浅的雾面灰，保持大片留白和柔和环境光。背景不能出现复杂纹理、图案、网格、代码、噪点、渐变光团或装饰性图形。\n- Logo A 位于左侧，Logo B 位于右侧。两者都被处理成一致尺寸的 3D 圆角方形应用图标，有柔和边缘、微妙厚度、细腻阴影和轻拟物高光，但不能变成夸张玩具质感。\n- 图标内部必须保留输入 Logo 的核心识别特征、主形状和主色倾向。不要改造成陌生图案，不要添加额外品牌标识，不要伪造真实商标。\n- 自动提取两个 Logo 的主色：左侧视觉偏向 Logo A 配色，右侧视觉偏向 Logo B 配色。整体色彩高级克制，避免过饱和、过亮或颜色数量失控。\n- 两个图标之间使用一条连续、平滑、轻盈的连接线。连接线从 Logo A 主色自然过渡到 Logo B 主色，线条可以轻微弧形或柔和波形，但必须稳定、清楚、不抢标题。\n- 连接线中间设置一个小节点，节点可以是细环、圆点或简洁发光点，用于表达同步、桥接、握手或中转。节点不能扩展成复杂图标或流程中心。\n- 标题排版位于中下区域，使用现代无衬线字体，清晰、稳重、可读。副标题明显小于主标题，保持简短，不能形成多段说明文字。\n- 标题中的重点字符、数字、加号、连接符或短关键词可使用 Logo A 与 Logo B 的主色做克制呼应；其他正文保持深色中性文字。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 横版优先采用左图标、右图标、中心连接线、下方标题的结构。Logo 连接关系是主视觉，标题负责命名和解释主题，两者之间要有明确空白。\n- 两枚图标应在同一水平视觉轴附近，尺寸一致或接近一致。连接线从图标内侧自然延伸，不穿过标题，不遮挡 Logo，不断裂。\n- 主标题位于画面中下区域，可居中排版。品牌名组合、加号或连接符可作为一行较小的上标题；核心主标题在其下方，字号更大更稳。\n- 5:2 比例中，图标和连接线占据上半区或中上区，标题占据中下区；16:9 比例中可以适度增加上下留白，但不要把图标压得太小。\n- 只表达两个主体之间的一种连接关系。不要加入多条路径、分支节点、步骤编号、流程框、箭头矩阵、数据看板或信息图组件。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要做复杂信息图、流程图、架构图、仪表盘、截图拼贴或多步骤教程图。\n- 不要加入第三个以上的 Logo、人物、设备模型、吉祥物、复杂插画、装饰图标或密集标签。\n- 不要使用深色赛博背景、强烈霓虹光、廉价渐变、夸张玻璃拟态、大面积发光或过重投影。\n- 不要让标题遮挡连接线或 Logo，不要让连接线穿过文字，不要出现拥挤、倾斜、裁切、错位或小字堆叠。\n- 不要把 Logo 扭曲到不可识别，不要生成错误品牌文字，不要使用未经输入提供的真实品牌标识。"
+        }
+      ]
+    },
+    {
+      "id": "brick-world",
+      "name": "积木世界",
+      "description": "用积木、模块、搭建和玩具世界表达系统、团队、计划、教育与成长。整体更偏明快、亲和和可组合结构隐喻。",
+      "anchors": [
+        "plastic brick studs, plates, modules, and connectors",
+        "miniature toy-scene photography",
+        "building, assembling, repairing, planning, or upgrading actions",
+        "bright controlled toy colors with clear plastic reflections",
+        "instruction-manual arrows, labels, and part numbers"
+      ],
+      "adaptation": [
+        "main title should become brick-built letters, a brick nameplate, instruction title, or modular structure",
+        "subtitle and labels should appear as manual steps, part labels, or small task cards",
+        "visual metaphor should be staged as a miniature system being assembled"
+      ],
+      "preserve": [
+        "tactile brick material and stud details",
+        "organized micro-world composition",
+        "constructive metaphor rather than loose toy props"
+      ],
+      "avoid": [
+        "recognizable toy brand logos",
+        "childish clutter or random scattered bricks",
+        "flat cartoon instead of miniature brick material"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张积木玩具世界视觉海报。风格核心是颗粒积木、模块化拼装、可爱但有秩序的立体场景，以及把主题转译成“正在被搭建”的视觉隐喻。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 积木颗粒、拼装板、凸点、模块连接、微缩人物、说明书式小箭头和玩具摄影质感。\n- 主题可以被搭建成桥、塔、城市、工厂、实验台、课堂、地图、机器、团队场景或成长路径。\n- 色彩明亮、亲和、干净，可使用红、黄、蓝、绿、白、灰等玩具色，但整体要有设计控制。\n- 光影像微缩棚拍，物体边缘清楚，材质有塑料反光和积木颗粒触感。\n- 场景应像一个正在运行的微型系统，而不是散落零件。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题可作为积木铭牌、搭建中的字块、底板标签、说明书标题或由积木拼出的结构。\n- 小字可借用说明书、标签纸、零件编号或任务提示的形式。\n- 积木人物和零件动作要服务主题隐喻，例如搭建、协作、修复、规划、升级或连接。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要只做玩具摆拍而没有主题结构。\n- 不要让零件散乱、色彩过幼稚或画面失去设计秩序。\n- 不要使用真实品牌标识或可识别玩具商标。"
+        }
+      ]
+    },
+    {
+      "id": "business-magazine-front-page",
+      "name": "商业杂志头版",
+      "description": "商业科技杂志头版式封面。强调锐利标题、编辑栏、主视觉人物或概念物、趋势报道感和高级商业传播气质。",
+      "anchors": [
+        "business and technology magazine front-page structure",
+        "bold sharp title with trend-report energy",
+        "one strong commercial metaphor object or scene",
+        "editorial bars, section labels, data-news cues, and high-contrast blocks",
+        "confident media-like visual hierarchy without real publication branding"
+      ],
+      "adaptation": [
+        "main title should integrate with a market curve, maze, warning sign, strategic map, funnel, price tag, or system node",
+        "subtitle and labels should behave like magazine deck, column labels, short conclusion, or issue tags",
+        "visual metaphor should make the business judgment visible at cover scale"
+      ],
+      "preserve": [
+        "magazine front-page authority and strong editorial hierarchy",
+        "one memorable commercial metaphor",
+        "limited but credible supporting information"
+      ],
+      "avoid": [
+        "fake real media masthead, logo, or trademark",
+        "stock market screen, handshake photo, or unrelated office person",
+        "dense fake columns or cheap finance template"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张商业科技杂志头版式封面。风格核心是大胆锐利的标题、编辑栏、主视觉人物或概念物、商业隐喻、趋势报道感和高级媒体传播气质。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 借鉴商业杂志、科技编辑和数据新闻的视觉气质，但不得出现真实媒体名、Logo、刊名或可识别商标。\n- 一个强商业隐喻主导画面，例如市场迷宫、撕裂白皮书、警示牌、增长曲线、资本流向、订单流、漏斗、飞轮、系统界面、战略地图或行业版图。\n- 高饱和色块、高对比标题、怪比例裁切、锐利图形、少量结构线、箭头、坐标、数据点或路径线。\n- 信息量少但像真实编辑系统：主标题、副标题、2-4 个栏目标签和一句短结论即可。\n- 整体应大胆、锋利、可传播，有商业判断和趋势报道感。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题不能只是普通大字，应被市场曲线、风险线、迷宫、路径、坐标、数据流、价格标签、系统节点或战略地图重构。\n- 副标题和栏目标签像杂志头版信息栏，层级清楚且不抢主视觉。\n- 图形和标题必须融合，不能是标题旁边摆一个装饰图标。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要生成假刊头、假真实品牌或仿冒媒体标识。\n- 不要塞满栏目文字或复杂商业说明。\n- 不要使用廉价财经模板、股票大屏背景或无关商务人物。"
+        }
+      ]
+    },
+    {
+      "id": "color-neo-constructivist-megastructure-poster",
+      "name": "彩色新构成主义巨构海报",
+      "description": "以 20 世纪构成主义为视觉骨架，融合彩色限色系统、现代编辑设计和复古印刷质感，制造巨构、压迫、震撼和强烈方向动势。",
+      "anchors": [
+        "neo-constructivist poster composition with monumental scale",
+        "enormous cropped subject occupying 40-80 percent of the frame",
+        "sharp diagonal cuts, arcs, wedges, rays, tracks, and high-tension geometry",
+        "bold unexpected 3-4 color palette with uneven color area distribution",
+        "restrained but powerful title integrated into the visual structure",
+        "vintage screen-print texture, halftone dots, paper grain, and slight ink misregistration"
+      ],
+      "adaptation": [
+        "main subject should feel too large for the frame, often cropped by edges",
+        "title should behave as structure, pressure, direction, or architectural mass",
+        "geometry should organize scale, rhythm, direction, and spatial dominance",
+        "wide covers may use strong left-right collision, diagonal flow, or monumental panorama"
+      ],
+      "preserve": [
+        "one core subject, one visual center, one motion direction, and one metaphor",
+        "strong first-glance impact and clear subject recognition",
+        "3-4 main colors only, with a dominant color and concentrated accent color",
+        "minimal readable text with total text area under 15 percent"
+      ],
+      "avoid": [
+        "decorative geometry with no spatial function",
+        "average-size subject placed normally in the frame",
+        "safe conventional industry palettes or repeated yellow-background formulas",
+        "crowded text, long explanations, or multiple competing focal points"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张具有巨构感、震撼感和强烈几何张力的彩色新构成主义海报。风格核心是巨大主体、极端尺度差、锐利方向动势、高反差色块、克制文字和复古印刷质感。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 一张图只保留 1 个核心主题、1 个核心主体、1 个视觉中心、1 个主要运动方向、1 个核心隐喻和 1 套独立配色。\n- 主体必须形成巨大压迫感，占据画面 40%-80% 面积，或被画面边缘大胆裁切，或与小型陪体形成极端尺度反差。\n- 优先使用巨大圆弧压入画面、超大主体局部特写、对角线切割、强透视延伸、环绕式构图、向中心汇聚、向上压迫或纪念碑式边缘裁切。\n- 几何元素包括巨大圆形或圆弧、三角形、楔形、长条色块、放射线、轨迹线、重复细线、锐利切面、大面积纯色背景和深色留空。\n- 几何元素必须承担空间、节奏、方向和压迫感，不作为装饰堆叠。\n- 主体可以适度几何化、平面化、符号化、剪影化、局部放大、比例夸张和结构强化；必须清晰可识别，但不追求繁琐细节。\n- 人物保留识别度最高的轮廓、姿态、侧脸、半身或局部特写；产品可放大、裁切、旋转、拆分或夸张透视；建筑强化高度、体块、边缘和纪念碑感；动物保留关键轮廓与动作；天体优先做成超大局部或巨大圆弧；抽象概念转化为单一清晰隐喻。\n- 每次重新建立一套 3-4 种主要颜色的大胆限色系统：1 种主色占 50%-70%，1 种爆点色集中用于关键主体、标题或几何切面，1 种深色稳定结构，1 种浅色用于文字与留白。\n- 色彩可以冷暖强碰撞、明暗强碰撞、高低饱和碰撞、互补或近互补碰撞、脏色与亮色并置、复古色与跳色并置。目标是大胆、陌生、冲突但成立。\n- 可参考但不要固定使用：暗紫 x 黄绿色 x 陶土橙 x 米白，宝蓝 x 桃红 x 橄榄绿 x 浅米色，深棕 x 湖蓝 x 芥末黄 x 奶油白，酒红 x 青绿 x 土黄 x 炭黑，灰紫 x 橙红 x 脏绿 x 象牙白，深蓝 x 珊瑚粉 x 沙黄 x 黑色，墨绿 x 荧光黄绿 x 灰粉 x 米白，赭石 x 雾蓝 x 淡金 x 深紫黑。\n- 加入克制的复古印刷质感：细微纸张颗粒、丝网印刷网点、轻微油墨不均、极轻微套色偏移、自然褪色和细小印刷纹理。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 画面最多保留主标题 1 处、副标题最多 1 处、辅助信息最多 1 处；辅助信息控制在 8 个汉字以内。\n- 文字总面积不超过画面 15%，主标题承担第一视觉或与主体共同承担第一视觉。\n- 主标题使用粗体、窄体、压缩字体或几何字体，可以巨型放大、局部裁切、纵向排列、沿几何边缘排列、与主体咬合、沿圆弧或斜线布局、穿插在前景与背景之间。\n- 标题要像画面结构的一部分，而不是单纯贴在背景上。\n- 阅读顺序必须明确：主标题、然后副标题、最后辅助信息。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要让主体以正常大小摆在画面里。\n- 不要平均分布颜色面积。\n- 不要连续套用固定黄色背景或固定色组。\n- 不要堆叠多组辅助文案或扩展成长说明。\n- 不要把几何元素当作无意义装饰。\n- 不要制造多个视觉中心、多套隐喻或多条主要运动方向。"
+        }
+      ]
+    },
+    {
+      "id": "consulting-report-visual",
+      "name": "咨询报告视觉",
+      "description": "咨询报告、管理框架和结构化商业分析风格。强调文字主导、标题结构重构、克制但完整的封面信息层次、图形化秩序和可信的企业视觉。长标题必须先提炼短核心词，再把完整标题降为清晰可见的报告式 B 层信息。留白必",
+      "anchors": [
+        "high-end management consulting report cover",
+        "typography-led Swiss grid with structured negative space, report header and footer, and a visible field of precise thin-line annotation",
+        "one short high-impact A-layer core phrase, with the complete source title preserved as a smaller B-layer report title",
+        "restrained regular-to-medium-weight Chinese typography, including thin-line, outlined, cut, hollow, or structurally rebuilt letterforms",
+        "one structured business metaphor such as a strategic path, threshold, fault line, coordinate, matrix boundary, or convergence point",
+        "the metaphor grows from, enters, cuts, frames, or extends the title letterforms instead of sitting beside them as an independent diagram",
+        "white, deep navy, cool gray, silver gray, and at most one very small controlled accent color"
+      ],
+      "adaptation": [
+        "for a long source title, extract a 2-8 Chinese-character A-layer core phrase and keep the complete title in a smaller header, subtitle, or edge information band",
+        "the A-layer may be large but must not become extra-bold, dense, or oppressive",
+        "main title should be structurally rebuilt and interlock with a path, threshold, fault line, coordinate, matrix boundary, or strategic map",
+        "use only one core metaphor, one clear visual center, very few labels, and substantial negative space",
+        "negative space must remain designed rather than empty; use a restrained secondary field of perspective lines, contours, coordinates, thresholds, construction geometry, or analytic annotations behind and around the title",
+        "the complete B-layer title or subtitle must be visibly present whenever the user supplies one",
+        "subtitle and supporting text should look like report-cover deck labels, page furniture, and section indexing, not social-media decoration",
+        "keep the output unmistakably a cover; do not unfold the article into a process, framework explanation, dashboard, or full slide"
+      ],
+      "preserve": [
+        "A-layer short core phrase remains the visual center while the complete source title remains readable at B-layer",
+        "restrained cover information density with visibly designed background structure rather than an empty canvas",
+        "readable B-layer title or subtitle, plus enough report furniture and fine-line geometry to establish a complete cover system",
+        "professional restraint, credible business structure, and clean boardroom-ready hierarchy",
+        "graphic structure is fused with the typography and remains subordinate to it",
+        "modern restrained type weight rather than heavy social-poster typography"
+      ],
+      "avoid": [
+        "using the complete long source title as one giant extra-bold block when a short A-layer phrase can carry the visual",
+        "extra-bold, black-heavy, compressed, or oppressive title typography",
+        "three-or-more-step process flows, checkpoint timelines, complete funnels, full matrices, dashboards, or explanatory infographics",
+        "an independent icon, bubble, chart, or diagram placed beside the title without changing the title structure",
+        "too many labels, modules, badges, nodes, arrows, or content-page sections",
+        "an isolated core word floating on a nearly empty background with no subtitle, report hierarchy, or supporting structural field",
+        "fake detailed data, dense charts, or unreadable small text",
+        "PPT template feel or course-cover feel",
+        "generic office scene, handshake, or stock business people"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张高端管理咨询报告式视觉封面。风格核心是“文字主导 + 标题结构重构 + 单一商业隐喻 + 瑞士现代主义网格 + 克制但完整的封面层次 + 专业配色”。\n\n这不是普通 PPT、解释型信息图或粗体自媒体封面。观众首先看到经过设计重构的核心词，其次才看到完整标题和商业隐喻。图形必须从文字结构中生长，而不是作为独立图表摆在标题旁边。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 麦肯锡式理性气质、高端报告封面感、瑞士现代主义网格和 boardroom-ready 的信息层级。\n- 白底或极浅冷灰底，保留大面积干净留白，但留白必须经过设计；使用可见但克制的网格、透视线、坐标、轮廓、阈值或分析标注组织空间。\n- 使用页眉、页脚、细边框、报告索引、年份、章节标签、坐标刻度等少量版式家具建立报告感，但不得形成内容页。\n- 画面只使用一个核心商业隐喻，例如战略路径、阈值、防线、断层、坐标、收束点、窗口、矩阵边界或价值阶梯。\n- 图形应简洁精准，只保留极细结构线、少量节点、一个方向箭头或一个关键强调点，不展开为完整说明结构。\n- 配色以白、深蓝、冷黑、冷灰、银灰为主；最多使用一种少量蓝、橙、红或绿作为决策点、风险点或终点强调。"
+        },
+        {
+          "title": "封面信息密度",
+          "body": "- 封面只保留一个主视觉核心词、一个商业隐喻、一个完整但克制的小标题系统和极少量标签。\n- 必须有明确而单一的视觉中心，信息量克制，留白充足，但画面不能只剩一个孤立词语和空白背景。\n- 用户提供的完整标题或副标题必须作为清晰可见的 B 层出现，不能省略或缩小到无法承担语义。\n- 背景至少建立一套连续的细线空间系统，例如单点透视线、同心风险轮廓、断层线、坐标轴、构造网格、路径残影或少量分析标注；这些结构应覆盖并连接画面，而不是零散装饰。\n- 可以围绕同一个隐喻放置 2–4 个极短的背景注释或坐标标签，但它们不能组成步骤列表、卡片模块或流程。\n- 不要把文章的章节、步骤、观点清单或分析框架全部画出来。\n- 不要生成三步、四步、五步流程，不要展开完整漏斗、矩阵、仪表盘、路线图或节点时间线。\n- 如果画面看起来像在“解释方法”，而不是在“提出一个高级商业观点”，说明已经偏离该风格。"
+        },
+        {
+          "title": "长标题分层",
+          "body": "当用户提供较长标题时，必须拆成三层：\n\n1. A 层 / 主视觉核心词：\n   - 从完整主题中提炼 2–8 个最有张力、最适合结构化重构的中文字符。\n   - A 层可以很大，但字重必须克制，避免粗黑、压迫和社媒海报感。\n   - A 层承担画面的商业隐喻。\n2. B 层 / 完整标题：\n   - 完整保留用户输入标题。\n   - 放在页眉、边缘信息栏、副标题区或报告标题带中。\n   - 字号明显小于 A 层，清晰可读但不争夺视觉中心。\n3. C 层 / 报告标签：\n   - 只保留 1–3 个极短标签、年份或栏目索引。\n   - 像咨询报告版式系统的一部分，不做徽章、按钮或社交媒体标签。\n\n不得为了“主标题完整”而把整个长标题做成一块巨型粗黑文字。完整性由 B 层承担，视觉冲击由 A 层承担。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- A 层核心词必须成为画面主体结构，而不是普通标题。\n- 根据语义对文字做切割、镂空、错位、分层、收束、路径化、框架化、矩阵化、断层化或空间化重构。\n- 战略路径可以进入字形内部，断层可以切开笔画，坐标可以成为字的骨架，窗口可以出现在负空间中，收束线可以从字中延伸到单一消失点。\n- 商业隐喻必须嵌入文字，改变字形结构或从字形中生长；禁止在普通标题旁边另放一个独立图标、泡沫、流程图或矩阵。\n- B 层完整标题和 C 层标签像报告封面小字系统，数量克制、层级明确。"
+        },
+        {
+          "title": "字体行为",
+          "body": "- 中文使用现代黑体、宋黑混合或克制的现代无衬线气质；英文使用 Helvetica、Neue Haas Grotesk、Univers 或 Swiss-style sans-serif 气质。\n- 主视觉文字可使用常规至中等字重、细线字、半镂空字、结构字或轮廓与实体混合字。\n- 字体可以巨大，但不能过度粗黑、过度压缩、形成沉重文字墙或廉价标题党视觉。\n- 优先通过结构、空间、尺度、负空间和透视制造张力，而不是依赖 extra-bold 字重。\n- 保持中文准确、完整可辨，不使用乱码、伪字或破坏识别的过度扭曲。"
+        },
+        {
+          "title": "空间与构图",
+          "body": "- 优先采用宽阔的横向报告封面结构、严格网格和大面积负空间。\n- 可使用单点透视、远处收束点、薄片式空间层、细线坐标或从文字底部延伸出的路径，建立理性而具有方向感的空间。\n- 背景结构线必须达到可感知的视觉存在：主网格、次级透视线、风险轮廓和边缘刻度共同构成完整空间，而不是只留下极淡、几乎看不见的辅助线。\n- 允许用半透明同心圆、波纹、弧线或泡沫边界暗示风险与预期扩张，但必须与标题字形、路径或坐标系统发生结构关系，不能成为孤立插图。\n- 允许将 2–4 个文章核心维度作为极小注释散布在同一坐标场中，例如技术突破、行业复制、组织采用、商业兑现；它们是背景分析标注，不是四步流程。\n- 视觉隐喻只有一个；其余结构线只用于建立秩序。\n- 图形必须服从标题，不能把画面切成多个同等权重的模块。\n- 页眉、页脚和边缘信息带可以存在，但必须轻、薄、小、准。"
+        },
+        {
+          "title": "色彩与质感",
+          "body": "- 主色：白、深蓝、冷黑、冷灰、浅灰、银灰。\n- 强调色只选一种，并且只用于一个风险点、决策点、价值点、终点或关键箭头。\n- 禁止大面积高饱和暖色、蓝紫霓虹、赛博朋克光效、彩虹渐变和广告式发光。\n- 使用干净哑光纸面、轻微印刷颗粒、精准细线和极淡空间阴影；避免玻璃拟态、塑料 3D 和通用科技 HUD。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要生成虚假详细数据、虚构复杂图表或密集小字。\n- 不要把完整长标题作为巨型 extra-bold 文字块。\n- 不要使用粗黑、拥挤、压迫性的社交海报标题。\n- 不要把封面做成三步以上流程、节点时间线、完整漏斗、完整矩阵、仪表盘或方法论说明页。\n- 不要让结构图抢走标题层级，也不要让图形和标题彼此独立。\n- 不要堆放大量图标、箭头、节点、标签、模块或说明文字。\n- 不要让一个孤立核心词漂浮在近乎空白的背景中，也不要省略用户要求的完整标题或副标题。\n- 不要使用廉价商务模板、握手照片或无关办公场景。"
+        }
+      ]
+    },
+    {
+      "id": "french-minimal-ink-poster",
+      "name": "法式极简墨线海报",
+      "description": "用法式编辑海报的克制排版、大片留白和手绘墨线，把文章主题压缩成一个准确的视觉隐喻。重点不是画全主题，而是先理解核心观点、矛盾、情绪和因果，再选择人物、物体、结构、距离、遮挡或轻微数字痕迹作为唯一视觉中",
+      "anchors": [
+        "warm ivory or old-paper background with 70%-85% negative space",
+        "sparse black hand-drawn ink lines, brush marks, broken edges, and slight bleeding",
+        "one precise visual metaphor derived from the topic's core judgment",
+        "French editorial poster typography with clear title hierarchy",
+        "at most one tiny restrained accent color on a word, line, node, or small detail"
+      ],
+      "adaptation": [
+        "landscape ratios use asymmetric title and visual-subject placement with large open space between them",
+        "portrait ratios keep the main visual center small or partially cropped, leaving a calm editorial field for title and subtitle",
+        "title must remain one of the first visual anchors and may break into 2-3 lines when long",
+        "visual subject can be a person, object, abstract structure, distance, break, shadow, or digital trace depending on topic meaning"
+      ],
+      "preserve": [
+        "one core metaphor, one main visual center, one readable main title",
+        "quiet French minimal editorial mood",
+        "hand-drawn ink texture, incomplete contours, and restrained paper warmth",
+        "sparse text: one title and at most 1-2 short subtitle lines",
+        "technology themes must include a subtle but clear digital trace without becoming tech UI"
+      ],
+      "avoid": [
+        "using the topic noun directly as a generic icon",
+        "defaulting every topic to a face, hand, back view, heart, bird, cage, rope, road, moon, bulb, clock, or seedling",
+        "chips, robots, mechanical brains, glowing networks, dashboards, or data panels for AI and technology topics",
+        "photo realism, 3D rendering, commercial technology landing-page style, infographic layout, or icon stacks",
+        "multiple metaphors, crowded scenes, large blocks of text, watermarks, signatures, dates, URLs, or unrelated brand marks"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张“法式极简艺术海报 + 手绘墨线视觉隐喻”的封面。画面从主题判断出发，而不是从固定人物、物品或构图出发：先压缩主题的核心观点、核心矛盾、情绪状态、因果关系和最值得被看见的一层含义，再把这句话转化为一个简单但不肤浅的视觉隐喻。\n\n画面只保留一个主标题、一个核心隐喻、一个主要视觉中心和最多 1-2 句副标题。整体像艺术家用墨水笔、毛笔或粗记号笔迅速捕捉下来的私人手稿，又具有法式编辑海报的克制、优雅和思想张力。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 背景使用温暖米白、象牙白或轻微旧纸色，干净、安静，有纸张呼吸感；整体留白占画面 70%-85%。\n- 主体以黑色手绘墨线、墨块和极简轮廓为主。线条粗细不均，带自然停顿、断裂、毛边、轻微晕染和手工痕迹。\n- 人物、物体和抽象结构都不必完整描绘，只保留最关键的轮廓、动作、结构和情绪；允许大部分内容消失在留白中。\n- 每张图只使用一个核心隐喻。隐喻可以来自一个动作、普通物品、两物关系、人物与物体关系、断裂、循环、错位、遮挡、平衡、失衡、距离、方向、重量、大小、负空间，或自然形态与人工秩序之间的变化。\n- 视觉主体不是默认人物，也不是禁止人物。根据主题选择人物、人物局部、日常物品、自然物体、抽象线条、几何结构、空间距离、光影、缺口、遮挡、重复或断裂。\n- 爱情、关系、孤独、信任、欲望、成长、告别、自我和选择主题，可以使用侧脸、背影、手部、身体姿态或人物间距离。\n- 制度、规则、效率、循环、信息差、边界、秩序和风险主题，优先使用物体、结构、线条和空间关系。\n- AI、互联网、算法、数字世界或科技主题，必须出现轻微但明确的科技联想：极少量方点组成的线、逐渐转化为像素的墨迹、规律节点、极简数字痕迹、人工秩序与自然笔触的对比，或传统物体的一处轻微数字化变化。科技痕迹只能作为隐喻的一部分，不能成为装饰背景。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题必须清晰、有封面感，是画面的第一视觉之一。标题较长时自动拆成 2-3 行，不能太小，也不能压满画面。\n- 标题使用高对比衬线字体、克制中文宋体气质、极简无衬线字体或具有法式编辑感的排版；不要随意混合多种字体。\n- 主标题与视觉主体形成清晰的左右、上下或远近关系，不平均分割画面，不把所有元素放得一样大。\n- 可使用一个局部放大、单一物体偏置、人物局部与物体形成关系、两个物体支撑或拉扯、线条从完整到断裂、自然形态转为人工秩序、主体被边缘裁切，或大量负空间包围小主体。\n- 副标题最多 1-2 句，每句尽量 8-18 个字。副标题只补充核心判断，不解释全部画面，不重复主标题。未提供副标题时，可根据主题提炼一句短而有判断力的文案。\n- 最多加入一种强调色：暗红、克制蓝、灰绿或淡黄。强调色只用于一个关键位置：一个词、一段线、一个节点、一个物体局部，或人物的一个微小细节；面积不超过画面 3%。"
+        },
+        {
+          "title": "生成前检查",
+          "body": "- 是否只有一个核心隐喻。\n- 是否根据主题判断了要不要出现人物。\n- 如果是科技主题，是否存在克制而明确的科技联想。\n- 科技意象是否仍然服从手绘墨线和大留白。\n- 是否避免了常见图标和素材模板。\n- 主标题是否足够清楚。\n- 副标题是否不超过两句。\n- 是否有 70%-85% 的留白。\n- 是否能删除任何多余元素。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要把主题中的名词直接变成图标；爱情不要默认红心，AI 不要默认机器人、芯片和电路板，自由不要默认飞鸟和鸟笼，思考不要默认灯泡，时间不要默认时钟，成长不要默认树苗。\n- 不要所有主题都套用同一种人物侧脸、手部或背影。\n- 不要默认使用放大镜、红心、鸟笼、飞鸟、绳结、道路和月亮。\n- 不要为了文艺感机械加入人物。\n- 不要为了科技感加入电路板、机器人、芯片、发光网络和数据界面。\n- 不要复杂叙事场景、写实照片感、3D 模型、商业科技宣传页、信息图、功能介绍或图标堆叠。\n- 不要多个隐喻同时出现，不要多种强调色，不要超过两句副标题，不要大段文字。\n- 不要水印、签名、日期、网址和无关品牌标志。"
+        }
+      ]
+    },
+    {
+      "id": "giant-perspective-chinese-title",
+      "name": "巨型透视中文标题",
+      "description": "以超大中文标题和强透视空间作为第一视觉，制造速度、压迫、冲突和事件海报感。适合中文标题主导的高冲击封面。",
+      "anchors": [
+        "enormous Chinese title as first visual",
+        "strong perspective, depth, speed, compression, or spatial pressure",
+        "title as architecture, road, wall, tunnel, sign, stage, or impact object",
+        "dramatic lighting, contrast color, motion lines, shadows, or event-poster energy",
+        "small scale references such as people, vehicles, signs, fragments, or urban edges"
+      ],
+      "adaptation": [
+        "main title should occupy dominant cover space and become physical spatial structure",
+        "subtitle and labels should orbit the title as event-poster information hierarchy",
+        "visual subject should reinforce title scale, movement, conflict, or pressure"
+      ],
+      "preserve": [
+        "readable correct Chinese title",
+        "strong perspective rather than ordinary flat title",
+        "title remains the main subject"
+      ],
+      "avoid": [
+        "weak title hierarchy",
+        "ordinary title over background image",
+        "illegible distorted Chinese characters"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张以超大中文标题和强透视空间为第一视觉的高冲击海报。风格核心是中文大字的速度、压迫、深度、冲突和空间戏剧性。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 巨型中文标题占据画面主导位置，具有透视变形、空间纵深、速度线、强阴影或建筑体量。\n- 标题可以像立面、街区、山体、隧道入口、飞驰路牌、舞台装置或冲向观众的实体。\n- 允许使用强烈对比色、粗颗粒、运动模糊、旧印刷痕迹、冲击线、斜切块面和戏剧光影。\n- 画面可有小人物、车辆、城市边缘、路标、碎片、烟尘、灯光或空间参照物来强化尺度。\n- 构图应大胆、紧张、接近事件海报或大型中文字体海报。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 中文标题必须是第一视觉，副标题和辅助信息只能围绕标题建立层级。\n- 透视和遮挡可以增强冲击，但不能破坏字形识别。\n- 英文辅助可以作为边缘标签、速度标记或结构线的一部分。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要弱化中文标题主体。\n- 不要使用普通标题加背景图的结构。\n- 不要把中文做成错字、断字或无法阅读的装饰字。"
+        }
+      ]
+    },
+    {
+      "id": "godot-2d-pixel-metaphor-poster",
+      "name": "Godot 2D 像素隐喻海报",
+      "description": "把一句主题提炼成一个可以被玩家体验的 Godot 2D 像素关卡，通过角色动作、环境关系、游戏机制和目标/阻碍表达单一核心观点。",
+      "anchors": [
+        "one abstract idea translated into one concrete level, one game mechanic, and one immediately legible visual metaphor",
+        "one main pixel character performing one clear action toward or against one symbolic goal or obstacle",
+        "handcrafted 16-bit or 32-bit pixel art with crisp edges, consistent sprite scale, coherent pixel grid, and tilemap world logic",
+        "indie-game promotional-poster finish with environmental storytelling, cinematic pixel lighting, strong focus, and deliberate negative space",
+        "complete original theme text integrated into the game world through pixel typography, architecture, terrain, light, or character interaction"
+      ],
+      "adaptation": [
+        "wide formats should emphasize horizontal movement, complete world depth, and distance between character and target",
+        "vertical formats should emphasize ascent, descent, growth path, or a distant target along the vertical axis",
+        "square formats should compress the metaphor into one central symbol, loop, or compact level with strong thumbnail recognition",
+        "recompose title position, character scale, level space, movement path, and negative space for custom ratios instead of cropping"
+      ],
+      "preserve": [
+        "exactly one core viewpoint, one main metaphor, one main character, one action, and one goal or obstacle",
+        "accurate and fully readable original theme text, with one to three keywords optionally emphasized",
+        "shared pixel resolution and grid logic across character, environment, text, lighting, particles, and shadows",
+        "game-world depth and level-design logic without looking like a screenshot or gameplay interface"
+      ],
+      "avoid": [
+        "photorealism, 3D render, ordinary anime, vector illustration, pixel-filtered photography, or mixed-resolution assets",
+        "multiple protagonists, multiple stories, multiple metaphors, four-panel layouts, crowded text, or complex game UI",
+        "inventory bars, status panels, menus, random English, watermark, logo, fabricated game metadata, or misspelled Chinese",
+        "copied characters, maps, sprites, tiles, icons, logos, trademarks, or recognizable levels from existing games",
+        "blurry pixels, smoothing filters, inconsistent pixel scales, weak title hierarchy, or generic screenshot composition"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张具有思想表达的 Godot 2D 独立游戏像素风视觉隐喻海报。不要把主题文字直接画成插图；先理解文字背后的观点、情绪、冲突与隐藏含义，再把它转化成一个玩家仿佛可以亲自体验的游戏关卡，用一个强烈、清楚的机制隐喻表达主题。"
+        },
+        {
+          "title": "主题理解",
+          "body": "- 在内部提取主题的表面含义、深层含义、核心冲突、主要情绪和最适合视觉化的关系，但不展示分析过程。\n- 一张图只表达一个最重要的观点，不试图容纳主题的所有信息。\n- 按“抽象概念 → 具体场景 → 游戏机制 → 视觉隐喻”的顺序完成转译。场景必须让观众感到这是一种可以被玩家体验的处境，而不是一组解释性图标。"
+        },
+        {
+          "title": "游戏机制隐喻",
+          "body": "- 方向冲突：用反向道路、传送带、移动平台、错误箭头或消失终点表达努力方向错误、越努力越远或追逐错误目标。\n- 距离关系：用远方城堡、山顶、出口、阶梯或桥梁表达遥远目标、时间积累和长期主义。\n- 尺度反差：用微小角色面对巨大机器、巨塔、城市、系统或怪物，表达人与 AI、时代或规则的关系。\n- 循环困境：用循环道路、无限楼梯、重复房间或闭环地图表达内耗、重复劳动和无法突破。\n- 光暗对比：用黑暗空间中的单一光源、出口、火焰或森林入口表达希望、觉醒和选择。\n- 建造与积累：用城堡、图书馆、基地、升级结构或资源积累表达知识、成长、复利和长期价值。\n- 信息与注意力：用数据洪流、通知怪物、安静森林或隐藏区域表达 AI 时代、信息洪流和专注力。\n- 这些是关系词典，不是固定模板。先内部构思多个方向，最终只选择最容易理解、最有视觉冲击、最适合单张海报且最有情绪反差的一个隐喻。"
+        },
+        {
+          "title": "单一场景与构图",
+          "body": "- 画面必须只有一个主要角色、一个明确动作、一个核心象征物、一个目标或阻碍、一个视觉焦点和一块合理留白。\n- 不增加第二主角、第二主要隐喻或复杂支线故事。环境可以丰富，但所有地形、建筑、道具和光源都必须服务同一个机制关系。\n- 可使用左文字右场景、上文字下场景、中心压迫、远近距离、对角线运动或环形循环构图；依据主题和比例选择一种，不平均混合。\n- 成品应像真实存在的独立游戏宣传海报：具有完整世界观、环境叙事和关卡空间，但不是游戏截图、概念草图、普通插画或 UI 界面。"
+        },
+        {
+          "title": "比例适配",
+          "body": "- `16:9` / `3:2` 横版：强化左右关系、横向移动和完整世界景深，让角色与目标形成清楚距离，标题进入留白区或场景结构。\n- `4:5` / `9:16` 竖版：强化上下空间、攀登或坠落路径，把目标放在远方或上方，标题位于顶部、中上区域或垂直地形中。\n- `1:1` 方形：集中为一个中心符号或闭环关卡，缩短阅读路径并强化缩略图识别度。\n- 自定义比例：重新设计标题位置、角色比例、场景空间、视觉动线和留白。禁止把固定横版模板直接裁切到其他比例。"
+        },
+        {
+          "title": "标题与场景融合",
+          "body": "- 用户输入的主题原文必须完整、准确地至少出现一次，使用清晰可读的中文或英文像素字体，并保持海报级排版。\n- 文字不能浮贴在场景上。标题可以成为建筑、道路、关卡边界、远方目标、光源、可破坏地形或环境符号，也可以被机械局部遮挡、产生受控像素故障，或与角色动作发生关系。\n- 从主题原文选择 1–3 个关键词，通过放大、改色、错位、破碎、发光、阴影或像素化形成第一层冲击，但不能损害完整原文的可读性。\n- 除主题原文外不增加大量说明文字、随机英文、日期、版本号、品牌、Logo 或虚构游戏信息。"
+        },
+        {
+          "title": "Godot 2D 像素语言",
+          "body": "- 呈现为 Godot 制作的独立游戏二维像素艺术：手工逐像素绘制感，16-bit / 32-bit 视觉密度，清晰硬边像素，统一 Sprite 比例，Tilemap 环境和真实关卡设计逻辑。\n- 角色、环境、标题、地形、粒子和阴影必须共享一致的像素网格与分辨率逻辑；不能混合不同像素尺度、平滑矢量边缘或高分辨率照片元素。\n- 使用像素艺术内部的电影级光影、景深分层、雾气、局部光源和环境叙事，但保持像素边缘清楚，不使用模糊滤镜掩盖细节。\n- 不是给普通图片添加像素滤镜，不是 3D 渲染后降采样，也不是模仿现成游戏的角色、地图、Logo 或具体美术资产。"
+        },
+        {
+          "title": "色彩系统",
+          "body": "- 根据主题自动选择一套有限、统一且有主次面积的像素调色板，不固定颜色。\n- 明亮冒险方向可用蓝天、草地、阳光和清新绿色；暗黑幻想方向可用深蓝、黑、暗红和火光；科技未来方向可用蓝紫、数据光和克制霓虹；温暖成长方向可用黄昏橙光、紫色天空和治愈氛围。\n- 色彩必须服务主题和隐喻，不照搬固定游戏配色，也不要让所有颜色平均竞争。\n- 参考图中的明亮平台冒险世界、横向关卡和远方城堡是一种代表性实现，不是固定模板；不要复制其 Godot 标识、问号砖、道具槽、菜单面板、角色造型或具体文案。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要写实摄影、3D 渲染、普通动漫、矢量插画、商业 PPT、信息图或普通封面模板。\n- 不要四宫格、多故事场景、多主角、多主要隐喻、复杂游戏 UI、物品栏、状态栏或菜单界面。\n- 不要大量文字、随机英文、水印、Logo、错误中文、模糊像素、平滑滤镜或不统一像素比例。\n- 不要复制任何现有游戏的角色、地图、Sprite、Tilemap、图标、Logo、商标或具体关卡。\n- 不要让成品看起来像直接截取的游戏画面；它必须具有海报级标题层级、留白和视觉焦点。"
+        },
+        {
+          "title": "最终标准",
+          "body": "最终画面应像一个真实存在的独立游戏宣传海报：一个可体验的游戏机制隐喻，一个主角与明确动作，一个目标或阻碍，一个完整像素世界，准确主题原文，专业排版，清楚世界观、情绪张力和视觉记忆点。\n\n只生成一张最终图，不输出分析、解释、多个方案、拼图、网格或联系表。"
+        }
+      ]
+    },
+    {
+      "id": "interleaved-title-editorial-poster",
+      "name": "超大标题图文穿插",
+      "description": "以一个由主题决定表现语言的单一主体和一个超大短标题共同建立构图，通过标题内部多次换层、主体遮字与文字压主体的双向咬合形成明确空间层次，同时保留可见留白和呼吸感。适合需要强编辑感、杂志封面感、展览海报感",
+      "anchors": [
+        "one theme-matched high-recognition subject with a clean silhouette, without defaulting to sculpture, metal, robots, or futuristic mannequins",
+        "one enormous short title integrated into the composition",
+        "explicit back-title, subject, and front-title layers with controlled mutual occlusion and at least two visible depth-order switches inside the title",
+        "bold geometric sans-serif typography with clean edges and preserved readability",
+        "restrained editorial details, visible breathing room, and a theme-derived 2-4 color palette"
+      ],
+      "adaptation": [
+        "derive a 2-8 character Chinese title or 1-4 word English title when the source is long-form",
+        "choose photography, a real-life subject, illustration, collage, silhouette, or abstraction according to the topic instead of repeating one material language",
+        "recompose title lines, subject placement, layering, and whitespace for each requested aspect ratio",
+        "keep no more than three information levels: main title, central subject, and minimal support text",
+        "place occlusion away from a person's eyes, nose, mouth, and other critical identifying features"
+      ],
+      "preserve": [
+        "exactly one core subject and one clear focal point",
+        "readable accurate main title despite partial cropping and occlusion",
+        "visible typography-subject interleaving in both directions within the core overlap zone, not text pasted over an image or a subject placed in front of one whole title row",
+        "obvious negative space and visual pauses around the main title-subject relationship",
+        "modern magazine, exhibition, or brand-campaign editorial finish"
+      ],
+      "avoid": [
+        "multiple unrelated subjects or noun-by-noun illustration",
+        "whole-line translucent type, mechanical top-background and bottom-foreground splits, random overlap, or unreadable letterforms",
+        "repetitive chrome people, sculptural heads, robots, mechanical faces, or futuristic mannequins used as a generic shortcut for design",
+        "blocked facial features, malformed typography, misspelled Chinese, or decorative gibberish",
+        "PPT, e-commerce, feed-ad, cheap template, or complex technology-dashboard aesthetics"
+      ],
+      "sections": [
+        {
+          "title": "任务目标",
+          "body": "生成一张“超大标题 × 单一主体 × 图文穿插 × 有呼吸感”的编辑型海报。\n\n这不是普通的“图片上加字”，而是让文字真正进入画面，和主体形成前后遮挡、穿插、咬合的关系。\n\n整体要像：\n\n- 设计海报\n- 杂志封面\n- 展览视觉\n- 品牌主视觉\n\n不要像：\n\n- 普通公众号封面\n- PPT 封面\n- 电商海报\n- 信息流广告\n- 廉价模板图"
+        },
+        {
+          "title": "一、先理解内容",
+          "body": "先自动分析用户输入的内容，提炼出：\n\n1. 这段内容最核心的主题；\n2. 最值得被放大的主标题；\n3. 最适合视觉化呈现的主体；\n4. 这张海报更适合传达什么气质。\n\n如果输入的是文章，而不是明确标题，自动提炼一个适合海报展示的短标题。\n\n标题控制原则：\n\n- 中文主标题优先控制在 2—8 个字；\n- 英文主标题优先控制在 1—4 个单词；\n- 标题要短、准、有力量，适合大字排版；\n- 不要把完整长句直接当作主标题。\n\n如果原文里有一句很适合做辅助说明，可以提炼一句极短副文案；如果没有，就不要硬加。"
+        },
+        {
+          "title": "二、主体选择规则",
+          "body": "根据主题，自动选择最合适的主视觉主体。主体不固定为某一种材质或某一种风格，可以是：\n\n- 真实人物；\n- 真实生活场景中的人或物；\n- 单一核心物件；\n- 扁平插画；\n- 剪影；\n- 拼贴；\n- 几何抽象图形；\n- 具象与抽象结合的概念图形。\n\n优先原则：\n\n1. 主体必须和标题语义直接相关；\n2. 主体轮廓要清晰，适合和大字穿插；\n3. 主体风格要根据主题自动变化；\n4. 不要长期重复同一种主体语言。\n\n主体风格分配逻辑：\n\n- 如果主题偏生活方式、运动、工作、情绪、消费、日常，优先使用真实人物、真实动作、真实场景或真实物件；\n- 如果主题偏设计、文化、审美、书籍、展览，可以使用插画、拼贴、剪影或图形化表达；\n- 如果主题偏哲思、隐喻、抽象概念，可以适度抽象化，但仍要保留一个明确主体；\n- 如果主题偏科技、AI、系统、算法、未来，可以更概念化，但不要默认全部做成金属风。\n\n重要限制：不要把“设计感”简单理解为金属雕塑、机器人、铬面人像或机械头部。设计感来自图文关系、版式层级和主体选择的准确性，而不是固定材质。\n\n默认不要：\n\n- 每次都生成金属人；\n- 每次都生成雕塑头像；\n- 每次都生成机器人；\n- 每次都生成未来感假人。\n\n如果用人物：\n\n- 人物动作自然；\n- 姿态可信；\n- 保留真实感、生活感、现场感；\n- 不要遮住眼睛、鼻子、嘴巴等关键部位。\n\n如果用抽象图：\n\n- 保持一个明确视觉焦点；\n- 不要做得太散、太碎、太装饰化。\n\n整张画面只保留一个主视觉焦点。如需多人，也只能围绕同一个动作或同一个主题形成一个整体焦点，不要变成群像拼贴。"
+        },
+        {
+          "title": "三、构图核心规则",
+          "body": "整张图的固定构图语言为：\n\n1. 超大标题跨越画面；\n2. 一个核心主体占据视觉中心；\n3. 标题与主体发生真实前后穿插；\n4. 信息量克制；\n5. 画面有留白、有呼吸感。\n\n关键词：\n\n- type over image\n- interleaved typography\n- foreground-background layering\n- editorial poster\n- modern graphic design\n- magazine cover aesthetic\n\n固定的是“图文关系”，不是固定主体类型，也不是固定配色模板。"
+        },
+        {
+          "title": "四、最重要：图文穿插规则",
+          "body": "主标题必须真正参与构图，而不是简单盖在图上。\n\n必须形成清晰的穿插关系：\n\n- 一部分文字在主体后面；\n- 一部分文字在主体前面；\n- 主体局部遮挡文字；\n- 文字局部压在主体前面；\n- 形成明确的前景 / 中景 / 后景层次。\n\n要求：\n\n- 文字与主体之间要有真实咬合感；\n- 即使有遮挡，标题依然要可读；\n- 遮挡关系要经过设计，不要胡乱盖住；\n- 不要整行半透明字；\n- 不要只做“一个人物压在一整排字前面”的简单关系；\n- 不要把背景字与前景字机械地分成上下两块；\n- 让同一标题内部的字、词或局部笔画交替换层，至少出现两次清晰的前后关系切换；\n- 在核心重叠区域同时看见“主体遮字”和“字压主体”；\n- 不要显得扁平，要体现明显空间层次。\n\n文字和主体要互相进入彼此的空间，而不是简单叠加。"
+        },
+        {
+          "title": "五、标题排版规则",
+          "body": "主标题必须是画面中最大的视觉元素之一。\n\n要求：\n\n- 使用超大字号；\n- 可以跨越整个画面；\n- 可以分行；\n- 可以断行；\n- 可以局部超出版面；\n- 可以局部被裁切；\n- 可以与主体紧密咬合。\n\n字体气质：\n\n- 粗体；\n- 高识别度；\n- 现代感；\n- 几何感；\n- 无衬线；\n- 平面设计感强。\n\n不要使用：\n\n- 手写体；\n- 花体；\n- 书法体；\n- 幼稚可爱字体；\n- 过度装饰字体。\n\n标题应该大胆，但不要因为做效果而影响识别。"
+        },
+        {
+          "title": "六、版式与留白",
+          "body": "整体版式要克制，不要过满，不要塞太多辅助信息。\n\n要求：\n\n- 保留明显留白；\n- 给主标题和主体足够呼吸感；\n- 让视线有停顿区；\n- 不要把每个角落都填满；\n- 不要做成满版轰炸式排版。\n\n辅助信息要少：\n\n- 最多一条短副文案；\n- 最多少量小字；\n- 不要堆很多英文碎句；\n- 不要加大段说明文字；\n- 宁可留白，也不要乱填。\n\n整张图信息层级最多三级：\n\n1. 超大主标题；\n2. 核心主体；\n3. 极少量辅助信息。"
+        },
+        {
+          "title": "七、比例适配规则",
+          "body": "不要把同一套构图生硬套进所有尺寸。根据指定比例自动调整版式。\n\n- `9:16`：纵向张力更强，标题可上下分区，主体可居中或偏上；\n- `4:5`：适合封面感最强的排版，主体居中，标题围绕主体；\n- `3:4`：保持均衡，标题与主体形成明显穿插；\n- `1:1`：构图集中，主体与大字更紧密；\n- `16:9`：横向展开，主体可偏左或偏右，标题横向拉开；\n- `5:2`：横幅感更强，适合长标题拆分、单一主体、更多留白和横向延展。\n\n无论什么比例，都要保持：\n\n- 一个主标题；\n- 一个主视觉焦点；\n- 明确层级；\n- 清晰穿插。"
+        },
+        {
+          "title": "八、配色规则",
+          "body": "不要固定成蓝色背景、粉色或红色辅助信息。配色要根据主题自动决定。\n\n原则：\n\n- 每张海报控制在 2—4 种主要颜色内；\n- 保持高对比、高识别度；\n- 配色有审美，但不过度花哨；\n- 配色服务于主题气质。\n\n可以是：\n\n- 黑白灰；\n- 米白 + 黑 + 橙；\n- 深绿 + 米白；\n- 酒红 + 奶白；\n- 淡粉 + 深紫；\n- 冷灰 + 电蓝；\n- 土黄 + 棕；\n- 其他合理方案。\n\n强调色只用于小字、细线、节点或局部强调，不要让辅助色抢走主标题和主体的风头。"
+        },
+        {
+          "title": "九、辅助图形元素",
+          "body": "允许加入少量辅助图形，增强编辑设计感，例如：\n\n- 细线；\n- 圆弧；\n- 节点；\n- 短横线；\n- 小型几何轨迹；\n- 极少量网格或标记。\n\n要求：\n\n- 很克制；\n- 数量少；\n- 只做辅助；\n- 不要喧宾夺主；\n- 不要做成复杂科技面板。"
+        },
+        {
+          "title": "十、最终效果要求",
+          "body": "最终画面必须满足：\n\n- 一眼能看出“大字进入画面”；\n- 标题与主体有真实前后穿插；\n- 画面不是平铺叠加，而是有空间层次；\n- 主体和标题都强，但不过满；\n- 画面有呼吸感；\n- 视觉风格统一；\n- 审美现代、干净、利落、有冲击力。\n\n优先保证以下四件事成立：\n\n1. 超大标题；\n2. 单一主视觉焦点；\n3. 明确图文穿插；\n4. 留白与呼吸感。\n\n这四件事比花哨细节更重要。\n\n请直接输出最终海报。"
+        }
+      ]
+    },
+    {
+      "id": "kimi-stlye",
+      "name": "kimi风格",
+      "description": "以 `kimi风格` 为识别名称，把主题转化为俯视角档案桌静物摄影。使用淡灰绿灯箱桌面、少量真实物件、编辑排版和大面积留白，形成项目档案或设计研究桌的封面。名称用于指代视觉方向，不复制 Kimi 的 ",
+      "anchors": [
+        "top-down archival still-life photography on a large softly lit table",
+        "pale gray-green or light mint background with restrained low-saturation materials",
+        "one abstract topic translated into a small set of real, relevant objects",
+        "Swiss editorial layout with a clean title zone and generous negative space",
+        "realistic metal, glass, wood, ceramic, paper, textile, pigment, or prototype materials"
+      ],
+      "adaptation": [
+        "choose or preserve the platform ratio and rebuild the object layout for each landscape, portrait, or square canvas",
+        "keep the title area clean and readable instead of filling the whole table",
+        "use a small number of objects with clear hierarchy, spacing, overlap, and natural shadows",
+        "change the object set and spatial relationship for each topic; do not reuse a fixed archive-desk template"
+      ],
+      "preserve": [
+        "top-down still-life photography and soft diffused light",
+        "pale gray-green or light mint background with low-saturation supporting colors",
+        "one clear title, one core concept, and one coherent object system",
+        "every object has a visible relationship to the topic",
+        "real material texture and enough negative space for an editorial cover"
+      ],
+      "avoid": [
+        "Kimi logos, wordmarks, interface elements, signatures, or copied official layouts",
+        "fixed object combinations, paper piles, file clutter, or meaningless decoration",
+        "neon technology style, cyberpunk, cheap futurism, complex UI, or excessive glow",
+        "unreadable title, garbled text, dense microtype, or a table filled edge to edge"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张 `Kimi Archive` 档案美学方向的概念视觉封面。画面是一张未来创意机构、设计工作室或博物馆研究档案桌的俯视静物摄影。把主题转化为少量真实物件和空间关系，使用淡灰绿色灯箱桌面、柔和漫反射光、自然阴影、编辑标题和大面积留白。画面应像项目视觉档案，不像固定模板或产品广告。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 使用顶视角真实静物摄影。画面主体是一张大型柔光灯箱桌面，不使用斜视角室内场景或悬浮 3D 展台。\n- 背景使用淡灰绿色或浅薄荷绿色，低饱和，表面干净。光线使用柔和漫反射光，物件保留自然接触阴影和真实重量。\n- 根据画幅比例重新安排物件、标题和留白。横版可建立左右关系，竖版可建立上下关系，方形可使用偏心结构。不要把桌面填满。\n- 先提取主题的核心概念，再把概念转化为真实物件、材料、距离、重叠、朝向、数量和层次。不要直接堆放主题文字。\n- 每次根据主题重新选择物件，不使用固定组合。主视觉物件和辅助物件应形成一个清楚的概念关系。\n- 物件数量保持少。可以使用专业工具、材料样本、模型、仪器、艺术品、书籍、地图、手稿、产品原型、自然元素或收藏品，但每件物品都必须服务主题。\n- 不大量使用纸张，不堆满文件，不加入无意义装饰。桌面应像真实创作者或研究者正在使用的工作台。\n- 使用真实材质：金属、玻璃、木材、陶瓷、纸张、织物、颜料和自然材料。保留划痕、折痕、透明度、反射、纤维和表面差异，但不要做旧或制造脏乱。\n- 摄影质感接近编辑静物摄影和产品摄影：顶视角、柔光、自然阴影、真实比例、低饱和调色和清楚景深。\n- 主色为淡灰绿或浅薄荷绿，辅助色为米白、暖白、浅灰、自然材质色和少量深黑。不要引入高饱和多色系统。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题必须清楚、锐利，是画面的主要视觉中心之一。标题区域保持干净，不被物件、阴影或纹理遮挡。\n- 标题使用克制的编辑字体。中文可使用现代宋体或简洁黑体，英文可使用中性无衬线或衬线字体，不堆叠多种字体。\n- 只保留主标题和可选副标题。不要生成大量小字、乱码、档案编号、说明栏或无意义英文。\n- 物件系统承担主题隐喻，标题说明主题。标题不重复解释物件，也不悬浮在无关静物照片上。\n- 可以让一个物件轻微靠近、指向或框住标题区域，但不得降低标题可读性。"
+        },
+        {
+          "title": "生成前检查",
+          "body": "- 是否使用顶视角真实静物摄影和淡灰绿色灯箱桌面。\n- 是否只选择少量与主题相关的物件。\n- 是否为当前主题重新设计物件组合和空间关系。\n- 是否保留清楚的标题区域和足够留白。\n- 是否没有纸张堆、文件堆、固定模板或无意义装饰。\n- 是否没有品牌 Logo、产品界面、复杂 UI、霓虹或过度发光。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不复制 Kimi 的 Logo、字标、产品界面、品牌署名或固定官方版式。\n- 不要固定物件组合，不要每次重复同一工具、书籍、地图、模型或纸张布局。\n- 不要大量纸张、文件堆、无意义装饰、物件铺满画面或杂乱工作台。\n- 不要霓虹科技风、赛博朋克、廉价未来感、复杂 UI、蓝紫光效或过度发光。\n- 不要模糊标题、乱码、大量小字、说明栏、档案编号堆叠或商业广告文案。\n- 不要插画、扁平图形、3D 渲染或悬浮产品展台替代真实静物摄影。"
+        }
+      ]
+    },
+    {
+      "id": "layered-paper-cut-concept-poster",
+      "name": "立体纸雕概念海报",
+      "description": "把主题中最重要的关系、矛盾或变化提炼为一个真实立体纸雕隐喻，以精确纸层、克制留白、柔和光影和图文一体的编辑排版完成高级概念海报。",
+      "anchors": [
+        "physically believable layered cut paper with visible thickness, apertures, fibers, folds, curled edges, and soft contact shadows",
+        "one precise conceptual metaphor expressed through a single spatial relationship or transformation",
+        "generous negative space, one focal composition, and restrained editorial hierarchy",
+        "title integrated into the paper construction as a cutout, layer, window, path, enclosure, or interleaved structure",
+        "limited coherent palette and one unified studio light shared by image, typography, and paper layers"
+      ],
+      "adaptation": [
+        "derive one high-impact core word for the first visual when the source title is long, while preserving the complete title as secondary information",
+        "recompose subject scale, title placement, whitespace, reading direction, paper-layer direction, and information density for every target ratio",
+        "for a requested multi-size suite, compile and generate one independently composed image per ratio while preserving the same metaphor, material, palette, and identity",
+        "reduce information in ultra-wide or ultra-tall formats and emphasize one simple visual relationship"
+      ],
+      "preserve": [
+        "real paper-cut construction rather than a flat illustration with a paper texture filter",
+        "exactly one main visual metaphor and one clear focal point",
+        "shared lighting, perspective, materiality, and depth across text, image, and paper layers",
+        "accurate user text, premium negative space, controlled color, and natural paper shadows"
+      ],
+      "avoid": [
+        "flat illustration, childish craft, simple cut-paper border, decorative clutter, multiple competing subjects, or dense information",
+        "plastic, foam, metal, neon technology, cheap CGI, hard black shadows, or overcomplicated backgrounds",
+        "fabricated editorial text, misspellings, gibberish, detached typography, or generic PPT and e-commerce layouts",
+        "crop, stretch, padding, mockup, contact sheet, grid, or one-size-fits-all adaptation for multiple ratios"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张高级 3D Paper Cut / 立体纸雕概念海报。核心视觉语言是：真实纸雕层叠、极简留白、柔和统一光影、高级纸张肌理、一个准确视觉隐喻，以及与纸层共享空间的编辑级排版。"
+        },
+        {
+          "title": "概念提炼",
+          "body": "- 先理解主题真正表达的核心概念、情绪、关系、矛盾或变化，不要直接把标题里的所有名词逐一画出来。\n- 只选择一个最准确的视觉隐喻，并把它转译成一个纸雕结构。重点是画面中的关系，例如打开、穿透、阻挡、连接、分裂、聚合、生长、下降、隐藏、显现、包裹或留缺。\n- 保持一个核心概念、一个主视觉、一个明确阅读重点。一个强视觉优于多个弱视觉。\n- 将“必须出现”的内容融入同一个隐喻和主视觉，不让它们变成并列素材清单；把“禁止出现”的内容合并进最终负面约束并严格排除。\n- 不输出分析过程；主题理解、隐喻选择、构图和配色判断都在生成前内部完成。"
+        },
+        {
+          "title": "Less is More",
+          "body": "- 每个元素都必须增强主题、构图、层次、阅读或情绪；否则删除。\n- 不要因为画面有空白就补装饰。留白本身承担节奏、气质和阅读分区。\n- 辅助信息宁少勿多，不堆砌物件、图标、标签或编辑小字。\n- 主视觉只有一个，不平均分配视觉重量，不填满整个画面。"
+        },
+        {
+          "title": "真实纸雕材质",
+          "body": "- 画面必须像真实纸张经过切割、叠放、折叠和镂空后形成的立体艺术装置，再由专业摄影棚拍摄。\n- 清楚表现纸层、纸张厚度、镂空关系、前后纵深、自然切割边缘、轻微纤维纸纹、柔和投影，以及少量合理的微卷、折痕或翘边。\n- 纸张层数只以建立空间和隐喻为准，不机械堆层。每层的轮廓和距离都应有明确作用。\n- 纸面保持哑光、细腻和可触摸；不能像普通插画套纸张滤镜，也不能像塑料、泡沫、金属或廉价 CG 模型。"
+        },
+        {
+          "title": "图文融合",
+          "body": "- 标题不能悬浮贴在插画上。让文字成为纸雕本身、从纸层中切出、被纸层包裹、与主体穿插，或成为窗口、路径、门洞和空间结构的一部分。\n- 图像、文字和所有纸层必须共享同一光源、投影方向、透视和空间尺度。\n- 如果标题短，直接强化完整主标题；如果标题长，提炼一个最有冲击力的核心词作为第一视觉，并把完整标题保留为第二层信息。\n- 根据文字模式决定是否显示完整标题、核心标题、只预留文字区或完全无文字。用户提供的文字必须准确，不得生成错字、乱码或错误英文。\n- 不得为了杂志感虚构品牌、日期、人物、刊号或无意义辅助文案。\n- 最终图像应像一句由纸层、空间关系和标题共同写成的视觉化句子。"
+        },
+        {
+          "title": "比例、尺寸与套图",
+          "body": "- 画幅决定构图，不是生成后再裁切。每个比例都重新调整主体比例、标题位置、留白、阅读方向、纸层延伸方向和信息密度。\n- 纵向画面强化上下关系和纸层纵深；横向画面强化左右关系或横向路径；方形画面强化中心视觉；超宽或超长画面减少信息，只保留单一视觉关系。\n- 用户指定输出尺寸时，在保持目标比例的同时遵循该尺寸；不要通过拉伸、补边或机械裁切适配。\n- 多尺寸套图必须保持同一主题、隐喻、纸张材质、配色和视觉识别，但为每个比例分别重构。每个尺寸输出独立成图，不要合并成拼图、联系表或样机。"
+        },
+        {
+          "title": "情绪与色彩",
+          "body": "- 情感倾向决定整体气质，不对应固定物件或符号。用户选择多个情绪时，确定一个主情绪，其余只作为辅助或反差，不平均混合。\n- 色彩建立为背景色、主色、辅助色和极少量强调色；纸层之间要能分辨，整体仍保持统一。\n- 用户指定多个色彩方向时，将其整理成一套协调配色，不要把所有方向同时塞进画面。未指定时，根据主题、隐喻和主情绪自动选择。\n- 避免廉价渐变、无逻辑撞色和全画面高饱和。颜色的多少不等于层次的多少。"
+        },
+        {
+          "title": "光影与构图",
+          "body": "- 使用柔和、统一的摄影棚光线。阴影只用于表现纸张厚度、层间距离、遮挡和空间层级。\n- 阴影应自然、细腻、方向一致，不要过硬、过黑或戏剧化到破坏纸张质感。\n- 视觉层级为：核心视觉 → 主标题 → 辅助信息 → 留白。确保第一眼知道看哪里，第二眼理解纸层之间发生的关系。\n- 参考图中的奶油纸色、紫色强调、横向标题区和纸雕洞景是一种代表性实现，不是固定模板；不要固定复制其中的电脑、知识库物件、品牌文案或配色。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要普通扁平插画、儿童剪纸、简单剪纸边框或纸张滤镜。\n- 不要多主体争抢、信息堆积、无意义装饰、复杂背景或图文分离。\n- 不要 PPT 模板、电商海报、廉价科技霓虹、塑料 3D、泡沫感、金属感或廉价 CG 感。\n- 不要错字乱码、虚构信息、硬阴影、黑死阴影、全画面高饱和或无逻辑撞色。\n- 不要机械裁切、拉伸、补边、样机展示、拼图、网格、联系表或多方案对比。"
+        },
+        {
+          "title": "最终标准",
+          "body": "最终画面必须做到：少但不空，简但不弱；纸层真实，隐喻准确，标题清楚，留白高级，光影自然，配色克制，一眼能懂，一眼能记住。\n\n每个目标比例只生成一张独立最终成图。不要输出分析、解释、提示词复述或备选方案。"
+        }
+      ]
+    },
+    {
+      "id": "midcentury-surreal-editorial-cover",
+      "name": "复古时代错位编辑封面",
+      "description": "把今天或未来才会发生的主题，交给一位 1958 年的美国商业插画师来描绘。用现代极简编辑设计承载 1940s–1960s 复古商业插画人物，让人物正在使用一个当代或未来物件，并通过一次克制的超现实时代",
+      "anchors": [
+        "modern minimal editorial cover composition with large warm-white negative space",
+        "1940s-1960s American commercial illustration characters with varied faces, ages, roles, and actions",
+        "one contemporary or future object used as a clear era-displacement visual metaphor",
+        "vintage magazine collage edges, halftone dots, faded ink, paper fibers, and screen-print grain",
+        "restrained 3-5 color palette with black editorial typography and no generic AI-tech tropes"
+      ],
+      "adaptation": [
+        "landscape covers reserve roughly 65-75 percent on the left for title and breathing room and 25-35 percent on the right for the visual event",
+        "portrait covers place title in the upper or upper-left area and the visual event in the lower or lower-right area",
+        "square covers remain visibly asymmetric rather than splitting the canvas into equal panels",
+        "dissolve illustration edges into the paper with feathered ink, dry-brush fade, collage erosion, or halftone disappearance instead of regular frames"
+      ],
+      "preserve": [
+        "one topic, one action, one core object, one main metaphor, and one era-displacement relationship",
+        "clear, accurate, readable title with minimal supporting text",
+        "recognizable mid-century commercial illustration character without repeating a fixed face or gender pairing",
+        "modern object must serve the topic rather than exist as decorative technology",
+        "warm-white paper field, editorial hierarchy, and deliberate asymmetry"
+      ],
+      "avoid": [
+        "generic AI imagery such as neon blue-purple gradients, cyberpunk glow, robots, AI brains, chips, holographic HUDs, code rain, or floating UI walls",
+        "photorealism, smooth modern digital painting, 3D CG, anime, or a generic beautiful recurring face",
+        "centered hero portrait, static people facing camera, equal left-right split, full-bleed busy scene, or hard rectangular collage frame",
+        "unnecessary props, multiple competing metaphors, feature lists, icons, logos, watermarks, dense labels, or fake magazine mastheads"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "你是一名顶级杂志封面艺术总监、视觉隐喻设计师、Mid-century 商业插画师、超现实拼贴艺术家与编辑排版设计师。根据用户提供的主题，创作一张具有统一系列感的编辑封面海报。\n\n整体视觉固定为：现代极简编辑设计 × 1940s–1960s 复古商业插画人物 × 当代或未来事物 × 超现实视觉隐喻 × 大面积留白。画面应像一本属于今天的独立杂志：请一位 1958 年的商业插画师，描绘一个只有今天才会发生的话题。"
+        },
+        {
+          "title": "内容理解与视觉隐喻",
+          "body": "- 先理解主题真正表达的核心观点、人物处境、行为变化或矛盾关系，不要看到标题关键词就直接寻找对应图片。\n- 把主题转化为一眼能理解、第二眼才发现略荒诞的视觉隐喻。\n- 优先寻找“人的动作 + 一个核心物体 + 一个反常关系”，而不是“关键词 + 图标”。\n- 全图尽量只讲一个视觉故事：一个主题、一个动作、一个核心道具、一个隐喻、一次时代错位。\n- 只保留一个主要隐喻和最多一个辅助细节。不能帮助理解主题的元素一律删除。"
+        },
+        {
+          "title": "人物与动作",
+          "body": "- 人物必须明显来自 1940s–1960s 美国商业广告、旧杂志或 Mid-century illustration 世界：真实复古插画感、红润脸颊、经典发型、复古服装和旧广告人物气质。\n- 根据主题自然变化人物的脸型、年龄、发型、职业气质、服装、肤色、身体比例和镜头角度。可使用年轻人、中年人、导师、学者、编辑、程序员、工程师、摄影师、主持人、旅行者或工作搭档。\n- 人物不能只是站着看镜头，必须正在输入、写作、拍摄、驾驶、观察、调试、连接、组装、整理、主持、讲述、讨论、创造、操控或面对某个意外。\n- 双人或多人必须有互动关系，不得并排合照。人物可以使用侧脸、背影、局部身体、俯视、仰视、回头、探出画面或手部特写，让画面像故事进行到一半时被截取。"
+        },
+        {
+          "title": "时代错位与现代物件",
+          "body": "- 让复古人物使用属于今天甚至未来的事物，例如 laptop、AI、coding interface、digital human、camera、drone、rocket、modern car、database、terminal、server、knowledge graph、video editing interface 或 creative software。\n- 现代物件必须服务主题，不能为了科技感无意义堆叠。即使主题是 AI、Coding、数字人或知识库，也优先表达“人在用科技做什么”，而不是“科技长什么样”。\n- 允许轻微且聪明的超现实关系，例如人物进入屏幕、坐在巨型键盘上、驾驶火箭、从文件夹中开车出来、把代码当作实物操作、把知识或声音变成可触碰的东西。\n- 整张封面只允许一次主要时代错位：复古人物与当代/未来物件之间必须形成明确且与主题有关的关系。"
+        },
+        {
+          "title": "构图与留白",
+          "body": "- 背景使用白色、暖白、象牙白或奶油白，只保留轻微纸张纹理；不要绘制完整办公室、城市或复杂环境。\n- 横版 16:9、5:2、3:1：左侧约 65%–75% 用于标题、副标题和留白，右侧约 25%–35% 出现人物与视觉隐喻，形成明显左轻右重。5:2 和 3:1 必须强化横向呼吸感，禁止主体居中、左右五五分、满版插画或把普通方图硬裁成长图。\n- 竖版：标题放在上方或左上，人物和视觉事件放在下方或右下；保留不对称关系和大面积留白。\n- 方形：采用明显偏心构图，不把画面平均切成两个模块。\n- 插画边缘不得是规则矩形、圆角卡片或相框。使用 irregular feathered edges、faded ink edge、dry brush dissolve、paper collage erosion 或 halftone fade，让旧杂志油墨自然消失进白色背景。"
+        },
+        {
+          "title": "图文关系与排版",
+          "body": "- 标题使用现代 Editorial Typography，与复古人物形成时代反差。中文可使用高对比宋体、现代宋体、极简黑体或窄体黑体；英文可使用 Didone、Bodoni-like Serif、Editorial Serif 或 Condensed Sans。\n- 文字越少越好，优先只保留完整主标题和副标题；必要时可加入一行极小英文 editorial note，但不自动加入卖点列表、功能图标、复杂标签或大量说明。\n- 主标题视觉优先级最高，可适当突出一个数字或关键词。标题必须逐字准确、完整、清楚可读，不被人物、道具或纹理遮挡。\n- 标题与人物事件必须共同讲述同一个主题，不能把标题像贴纸一样叠在无关插画上。"
+        },
+        {
+          "title": "色彩、材料与质感",
+          "body": "- 背景保持白或暖白，人物和道具使用典型复古印刷色，如 Tomato Red、Faded Coral、Mustard Yellow、Avocado Green、Olive Green、Teal、Powder Blue、Burgundy、Dusty Pink、Lavender 或 Warm Brown。\n- 通常限制为 1 个主强调色、1–2 个辅助色、黑色文字和白色背景，整张图主要颜色不超过 3–5 种。\n- 采用 Mid-century advertising illustration、Vintage editorial collage、Surreal retro montage 与 Modern editorial design 的融合质感。\n- 人物与插画带有 halftone dots、旧印刷颗粒、褪色油墨、轻微套色偏移、纸张纤维、screen print texture、磨损和不完全均匀的颜料覆盖，像从旧杂志中剪下来的插画，而不是光滑的现代数字绘画或 3D CG。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 禁止 AI 蓝紫渐变、霓虹灯、赛博朋克、发光芯片、AI 大脑、机器人头像、科技粒子、全息 HUD、大量漂浮 UI、代码雨或通用科技素材堆叠。\n- 禁止写实摄影、光滑现代数字绘画、3D CG、动漫风、过度精致的统一人物脸、静态正面合照和没有互动的并排人物。\n- 禁止多重隐喻、多个同权重视觉中心、满版复杂背景、无关道具、卖点列表、功能图标、密集小字、Logo、水印、假杂志刊名、卡片边框和规则相框。\n- 禁止为了丰富画面而堆东西；不服务于主题的元素必须删除。"
+        },
+        {
+          "title": "生成标准",
+          "body": "第一眼看到标题，第二眼看到人物事件，第三眼发现复古人物正在做一件不属于那个年代的事情，第四眼理解这种时代错位为什么与主题有关。只生成一张完整封面，不展示分析过程，不解释视觉隐喻，不给多个方案，不做拼图。\n\n始终坚持：一个主题，一个动作，一个隐喻，一次时代错位，一张封面。"
+        }
+      ]
+    },
+    {
+      "id": "minimal-public-space-photography",
+      "name": "极简公共空间摄影",
+      "description": "极简公共空间摄影感封面。以冷静、克制、几何化公共空间和少量人物符号形成高级编辑海报气质。适合观点文、文化观察、长文封面和关于秩序、个体、空间、边界、等待、流动的隐喻表达。",
+      "anchors": [
+        "calm geometric public-space photography with strong spatial order",
+        "clean tiled surfaces, steps, door frames, colonnades, seating, corridors, walls, and water reflections",
+        "sparse quiet human figures used as compositional and metaphorical symbols",
+        "bright restrained retro palette with mint green, ice blue, cream white, pale wood, and small tomato or coral red accents",
+        "giant readable title integrated into architectural geometry and negative space"
+      ],
+      "adaptation": [
+        "main title should become part of a wall, tile grid, doorway, corridor perspective, steps, reflection, or spatial boundary",
+        "subtitle should appear once as restrained editorial microtype, smaller than the main title",
+        "visual metaphor should be carried by one concrete action, object, posture, reflection, passage, threshold, or ordered placement"
+      ],
+      "preserve": [
+        "minimalist public-space geometry and generous negative space",
+        "calm bright restrained color system with only one small warm accent",
+        "readable integrated title and quiet editorial photography feel",
+        "few human figures with neutral expressions and no theatrical performance"
+      ],
+      "avoid": [
+        "information panels, numbered modules, data icons, barcodes, percentages, right-side explanation columns, decorative English, or dense magazine microtext",
+        "PPT cover feel, cheap technology feel, crowded element stacking, or generic infographic layout",
+        "exaggerated facial expressions, smiling poses, performance-like gestures, or fashion-advertising drama",
+        "copying any specific photographer's existing work or recreating a known image"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张极简公共空间摄影感的高级编辑海报。风格核心是冷静、克制、几何化公共空间、明亮低饱和复古色彩和少量人物符号。画面应像一张完成度很高的艺术摄影封面，而不是信息图、PPT 或商业广告。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 画面以极简公共空间为主体，优先使用瓷砖、台阶、门框、柱廊、座椅、走廊、墙面、水面反射、泳池边缘、窗洞或空旷大厅等几何结构。\n- 空间干净、明亮、留白充足，透视关系清晰，横竖线、重复格、边界线和对称/近似对称构图形成强秩序感。\n- 人物数量少，表情平静，不笑，不夸张，不表演。人物只承担构图、尺度和隐喻功能，像空间里的秩序符号。\n- 色彩以薄荷绿、冰蓝、奶油白、浅木色为主，整体干净、明亮、复古、克制。只允许少量番茄红或珊瑚红作为视觉锚点。\n- 质感应接近高级编辑摄影：真实空间、柔和自然光、干净墙面、轻微胶片感、低噪点、精确构图，不要插画化或塑料感。\n- 核心隐喻必须具体，可通过一个动作、物件、姿态、门槛、水中倒影、空座位、红色衣物、通道尽头或人物站位表达。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 只保留主标题和副标题。允许极少量匹配主题的小字，但不超过一处。\n- 主标题巨大、完整、清晰可读，使用番茄红或深青绿色，并成为画面结构的一部分。\n- 主标题可以像墙面标识、瓷砖网格、台阶边缘、门框横梁、水面反射、走廊透视线或空间边界一样存在，不要像普通贴片悬浮在图片上。\n- 副标题小一号，只出现一次，放在留白、墙面、地面边缘或门框附近，保持克制的编辑排版。\n- 文字、人物和空间几何必须互相支撑：标题建立结构，人物提供尺度和隐喻，空间提供秩序和呼吸感。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要信息栏、编号、数据图标、条形码、百分比、右侧说明栏、装饰英文或杂志小字堆叠。\n- 不要 PPT 感、廉价科技感、元素堆砌、课程封面、商业广告大片或通用信息图模板。\n- 不要夸张表情、笑容、戏剧化姿势、时尚硬广姿态或拥挤人群。\n- 不要复刻任何具体摄影师的已知作品，不要生成可识别的真实作品构图。"
+        }
+      ]
+    },
+    {
+      "id": "minimal-visual-metaphor",
+      "name": "极简视觉隐喻风",
+      "description": "把商业、科技、组织和系统主题转译为一个“可读但不直白”的抽象实体装置。通过单一核心动作、少量精确物体和可选的小比例人物，表达连接、汇聚、推进、转化或跨越等关系变化。画面像一件置于画廊中的编辑雕塑，克制",
+      "anchors": [
+        "premium business and technology editorial cover with modern Swiss restraint",
+        "one readable but indirect abstract physical apparatus expressing a single action or change",
+        "warm white paper-textured background with generous negative space",
+        "graphite black, charcoal gray, and one low-saturation translucent ink-green accent",
+        "matte graphite metal, precise black modules, frosted green glass, and soft natural shadows",
+        "exact readable title in a clean Chinese sans-serif with at most one key word or number highlighted in ink green"
+      ],
+      "adaptation": [
+        "for landscape ratios, place the exact title on the left in roughly 50-55 percent of the canvas and the metaphor apparatus on the right in roughly 40-45 percent",
+        "for portrait ratios, place the exact title above and the metaphor apparatus below while retaining one visual center and ample negative space",
+        "translate the topic into one core action such as connecting, converging, aligning, advancing, dismantling, penetrating, folding, balancing, transforming, growing, or crossing",
+        "use only a few precise objects; an optional small realistic person may perform the decisive action and provide scale"
+      ],
+      "preserve": [
+        "one single visual story with a clear action, relationship, and result",
+        "quiet gallery-like composition, precise spacing, and substantial warm-white negative space",
+        "restrained palette limited to warm white, graphite black, charcoal gray, and low-saturation translucent ink green",
+        "exact, complete, clearly readable title with no other readable text",
+        "material realism, soft natural shadows, and premium editorial sculpture quality"
+      ],
+      "avoid": [
+        "literal icons, explainer diagrams, instruction-manual illustration, dashboards, or multiple competing concepts",
+        "cyberpunk, neon, blue-purple gradients, robots, AI brains, chips, sci-fi cities, or screen-filled UI",
+        "cartoons, home-interior styling, cheap 3D, exaggerated lighting, logos, watermarks, subtitles, borders, or decorative microtext",
+        "unnecessary people, theatrical poses, visual clutter, or decorative lines without semantic purpose"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张高级、极简、可读的商业科技编辑封面。先理解标题背后真正表达的关系、变化、动作或结果，再把它转译为一个“可读但不直白”的抽象实体装置。画面必须安静、精确、留白充足，像一件被放入画廊的编辑雕塑，而不是图标、说明图、PPT 或廉价科技 3D。"
+        },
+        {
+          "title": "语义转译",
+          "body": "- 先提炼标题中的主体、对象、关系、变化方向和最终结果，只选择一个最能代表主题的核心动作。\n- 把核心动作做成一个具有材料、结构和空间关系的小型实体装置。装置应让观众不看标题也能感到“某件事正在发生”，但不能直接复刻标题中的名词。\n- 优先使用连接、汇聚、对齐、推进、拆解、穿透、折叠、平衡、转化、生长或跨越等可视动作。动作必须通过物体之间的张力、距离、接触、牵引、嵌合、开合、路径或状态变化被看见。\n- 右侧或下方只讲一个视觉故事，使用少量精确物体。不要同时展示多个隐喻、多个步骤或多个同权重中心。\n- 不把主题画成图标、字面场景、说明书插图或通用科技符号。每件物体都必须承担清楚的语义关系。"
+        },
+        {
+          "title": "抽象装置与人物",
+          "body": "- 装置使用哑光石墨金属、精密黑色模块、磨砂半透明墨绿色玻璃等材料，并保留真实重量、接触、透明度、折射和柔和自然阴影。\n- 装置尺寸精巧、比例可信、结构清楚，像高级编辑静物摄影与建筑模型之间的实体雕塑。\n- 可以加入一位小比例、真实感人物，让人物调整、连接、推进、观察或完成最后一步。人物只提供尺度、动作和叙事触点，不承担主视觉。\n- 人物姿态自然、克制、目的明确，不面对镜头表演，不使用夸张动作。如果人物会让隐喻变得多余、俗套或字面化，则完全省略。\n- 不使用机器人、AI 大脑、芯片、科幻城市、悬浮屏幕或复杂机械来代替真正的语义转译。"
+        },
+        {
+          "title": "构图与留白",
+          "body": "- 背景使用暖白或米白，带极轻微纸张纹理。空间干净、连续，不出现真实家居、办公室或展台环境。\n- 横向比例：标题置于左侧，约占画面 50%–55%；抽象装置置于右侧，约占 40%–45%。两者通过方向、距离或动作产生关系，但不得互相遮挡。\n- 竖向比例：标题置于上方，抽象装置置于下方；仍然保持大面积留白和一个明确视觉中心。\n- 方形比例：使用偏心构图，让标题与装置形成清楚的上下或左右关系，不平均切成两个模块。\n- 构图必须安静、精确、疏朗，像被策展过的画廊陈列。不要堆叠概念、填满画布或加入无语义装饰。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 标题必须逐字准确、完整、清楚可读，不改写、不省略、不生成错别字。根据标题长度自动断行。\n- 标题使用高级中文无衬线字体气质，深石墨色，字重克制但足够清楚。\n- 可自动选择标题中最关键的一个词或数字，以低饱和墨绿色强调；最多强调一处，其余标题保持深石墨色。\n- 除完整标题外，不生成任何其他可读文字。不要副标题、装饰英文、小字、编号、标签、Logo、水印、边框或无意义符号。\n- 标题和装置必须共同解释同一个主题：标题负责准确命名，装置负责表达关系、动作与结果。"
+        },
+        {
+          "title": "色彩、材质与光线",
+          "body": "- 配色严格限制为暖白、石墨黑、炭灰和低饱和半透明墨绿色。\n- 主体表面使用哑光石墨金属、精密黑色模块和磨砂半透明墨绿色玻璃，不引入高饱和辅助色。\n- 光线柔和、自然、方向清楚，形成轻微接触阴影和空间层次。不要夸张轮廓光、强反射、发光边缘或广告式高光。\n- 质感必须高级、真实、克制；避免塑料感、游戏建模感、家居摆件感和廉价 3D。"
+        },
+        {
+          "title": "生成前检查",
+          "body": "- 是否只表达一个核心动作和一个视觉故事。\n- 是否不用标题也能感到明确的关系、变化或结果正在发生。\n- 是否只使用少量精确物体，并让每件物体服务主题。\n- 是否保留大量暖白留白、单一视觉中心和安静的编辑构图。\n- 是否完整、准确、清楚地呈现标题，且没有任何其他可读文字。\n- 是否严格使用暖白、石墨黑、炭灰和低饱和半透明墨绿色。\n- 若使用人物，人物是否仅承担尺度与关键动作；若无必要，是否已省略人物。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要图标化主题、字面插图、说明书场景、信息图、流程图、仪表盘或多个并列概念。\n- 不要赛博朋克、霓虹、蓝紫渐变、机器人、AI 大脑、芯片、科幻城市、复杂仪表盘或满屏 UI。\n- 不要卡通、家居风、廉价 3D、夸张光效、塑料材质、浮夸人物或拥挤场景。\n- 不要副标题、装饰英文、小字、Logo、水印、边框、装饰线或不承担语义的装饰物。\n- 不要让标题缺字、错字、变形、被遮挡、裁切或缩小到无法阅读。"
+        }
+      ]
+    },
+    {
+      "id": "osb-industrial-blue-line-metaphor",
+      "name": "OSB 工业蓝线条隐喻",
+      "description": "以真实 OSB 刨花板的天然粗粝纹理承载一组高度理性的工业蓝标识字与连续线隐喻，通过左上标题、右下图形和大面积木板留白表达一个核心关系、动作或结果。",
+      "anchors": [
+        "full-bleed front-facing authentic warm honey OSB board with irregular compressed wood strands and optional tiny black corner screws",
+        "one exact industrial blue selected from #087FBE, #007FC4, or #006FC0 and reused consistently for all text, lines, and graphics",
+        "heavy geometric sans-serif title fixed in the upper-left as matte acrylic or thin metal signage with minimal contact shadow",
+        "one simplified continuous-line metaphor in the lower or lower-right area using no more than three core graphic elements",
+        "at least 55 percent visible board negative space and no more than 30 percent line-art area"
+      ],
+      "adaptation": [
+        "preserve the upper-left title and lower-right metaphor balance across every ratio while recomposing scale, line path, and whitespace",
+        "landscape formats should use a long horizontal or diagonal visual path across generous board space",
+        "square formats should shorten the path while keeping clear corner-to-corner balance and one focal relationship",
+        "vertical formats should redirect the line downward toward the lower-right without crowding the title or reducing negative space"
+      ],
+      "preserve": [
+        "authentic OSB strand-board material rather than generic wood, plywood, cork, paperboard, or smooth furniture",
+        "one unified industrial blue and one coherent line language across title and metaphor",
+        "exact readable user-provided text only, with no fabricated labels, numbers, English, dates, brands, logos, or watermarks",
+        "one core concept, no more than three core graphic elements, line-art area at or below 30 percent, and negative space at or above 55 percent"
+      ],
+      "avoid": [
+        "room, wall, desk, people, environmental context, realistic scene, cartoon stickers, photos, screenshots, UI, flowcharts, or infographics",
+        "real or colored logos, traced trademarks, stock icons, multiple icon sets, dense small symbols, or several competing metaphors",
+        "neon, glow, gradient, liquid text, mirrored metal, strong 3D extrusion, colored lighting, hard shadows, or decorative clutter",
+        "inconsistent blue shades, extra text, random English, fabricated metadata, mechanical cropping, stretching, or padding"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张“真实 OSB 定向刨花木板 + 工业蓝标识字体 + 一组极简线条隐喻”的高级封面。木板天然粗粝杂乱，蓝色文字和线稿理性克制；二者通过强材质反差、大面积留白和一个准确关系隐喻形成创意工作室、建筑事务所、共享空间或独立品牌式视觉。"
+        },
+        {
+          "title": "主题与隐喻",
+          "body": "- 先理解主题真正表达的问题、关系、动作或结果，再提炼一个最准确、最容易被读懂的视觉隐喻。\n- 不把主题中的每个名词逐一画出来。整张图只表达一个核心概念，只使用一组统一线条图形。\n- 优先通过一个连续动作或结构变化表达含义，例如连接、分离、打结、切断、打开、压缩、展开、阻挡、穿越或重新连接。\n- 线条可以构成一个人物、设备、工具、物件或抽象符号，但最多只出现 3 个核心图形元素，并且共同讲述同一个关系。"
+        },
+        {
+          "title": "固定 OSB 背景",
+          "body": "- 整张画面必须由真实 OSB 定向刨花板铺满，正面平视，不出现房间、墙壁、桌面、人物或其他环境。\n- 木板呈自然暖黄色或浅蜂蜜色，保留粗粝、不规则的木屑压制纹理。木屑的大小、方向、密度和深浅自然变化，不能规律重复。\n- 材质必须明确是 OSB 定向刨花板，不得变成普通木纹、实木板、胶合板、软木板、纸板或光滑家具表面。\n- 四角可以保留 0–4 颗很小的黑色固定螺丝，只用于加强真实安装感，不能成为装饰中心。\n- 木板纹理在标题和线稿区域仍可见，但不能干扰字形和线条识别。"
+        },
+        {
+          "title": "固定工业蓝标题",
+          "body": "- 每张图从 `#087FBE`、`#007FC4`、`#006FC0` 中选择一个高饱和工业蓝，并将同一个精确蓝色用于全部标题、线条和图形；不混用深浅，不渐变，不发光。\n- 主标题使用粗重、简洁、几何感强的现代无衬线中文字体，默认位于左上区域，整齐左对齐，并与画面边缘保留充足安全留白。\n- 标题像哑光蓝色亚克力字或薄金属标识字直接固定在木板表面，只有非常轻微、真实的厚度和接触投影。\n- 英文标题只能来自用户输入，可置于中文标题上方或独立成行。副标题仅在用户提供时出现，并明显弱于主标题。\n- 除用户输入的主标题、副标题或明确提供的英文标题外，不得生成任何其他文字、数字、英文、说明、Logo、水印、日期、编号或虚构信息。\n- 不使用霓虹字、液态字、渐变字、镜面字、发光字、夸张 3D 字、书法体、卡通体或装饰字体。"
+        },
+        {
+          "title": "单色线条隐喻",
+          "body": "- 所有隐喻图形必须用与标题完全相同的工业蓝重新绘制，呈现建筑导视、现代工业标识、连续线插画、极简图标和编辑概念图形的统一语言。\n- 线宽统一，转折干净，圆角和直角逻辑一致，造型高度简化。可以是一条连续线、两个物体间的连接、一条路径的状态变化，或一个被打结、切断、打开、压缩、穿透或重连的结构。\n- 线条像极薄的哑光蓝色金属条、亚克力条或精确印制线固定在木板表面，保持极轻微厚度和自然侧向投影；不能像数字界面悬浮在画面上。\n- 用户即使提供产品、软件、品牌或平台名称，也不得直接粘贴真实 Logo、彩色图标、截图、照片或现成图标。只根据其功能或非识别性核心轮廓重新设计单色线稿，不复刻可识别商标。\n- 图形放在中下部、右下区域或由边缘延伸至右下，面积不超过画面 30%。线条可以从画面边缘进入，穿过或连接元素，形成一条完整视觉路径。"
+        },
+        {
+          "title": "构图与比例",
+          "body": "- 标题承担左上视觉重量，线条隐喻承担右下视觉重量，二者之间保留大面积完整 OSB 木板。\n- 整体留白不少于 55%，线条图形不超过 30%，最多 3 个核心图形元素。画面必须疏朗、克制、干净，不填满、不均分视觉重量。\n- 横版比例强调长距离的左上—右下对角平衡和水平路径；方形比例缩短线条路径但保留左上标题与右下隐喻；竖版比例让线条沿纵向下降或转折到右下，同时保持标题左上和充足留白。\n- 每个比例重新调整标题尺度、行数、线条路径、图形大小和空白分布。不要从 5:2 模板机械裁切、拉伸或补边。"
+        },
+        {
+          "title": "光线与气质",
+          "body": "- 使用柔和自然侧光，让蓝色实体字和线条在 OSB 表面产生极轻微、方向一致的接触投影，同时保留木屑纹理的真实起伏。\n- 整体气质真实、粗粝、理性、克制、现代。木板的天然随机纹理与工业蓝几何秩序形成明确反差。\n- 不使用赛博光效、强渐变、金属镜面、彩色灯光、复杂阴影、过度复古或过度装饰。\n- 参考图中的“线团 → 公文包”只是职场内耗主题的一次隐喻实现，不是固定模板；新主题必须重新设计关系与路径。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要普通木纹、实木、胶合板、软木板、纸板、光滑家具或任何室内环境。\n- 不要复杂场景、完整故事插画、写实人物、卡通贴纸、彩色 Logo、截图、照片、UI、流程图、信息图或大量小图标。\n- 不要多组隐喻、超过 3 个核心图形、超过 30% 的图形面积或少于 55% 的留白。\n- 不要额外文字、随机英文、数字、品牌信息、Logo、水印、日期、编号或说明。\n- 不要蓝色不统一、发光、渐变、霓虹、复杂阴影、镜面材质、夸张立体字或现成图标。"
+        },
+        {
+          "title": "最终标准",
+          "body": "最终画面必须稳定呈现：满版真实暖黄 OSB 刨花板、左上工业蓝哑光标题、右下同色极简线条隐喻、一个核心概念、最多 3 个图形元素和超过一半的木板留白。\n\n只生成一张最终封面，不输出分析、解释、备选方案、拼图、网格或联系表。"
+        }
+      ]
+    },
+    {
+      "id": "paper-emboss-deboss-cover",
+      "name": "纸面击凸压凹封面",
+      "description": "把主题提炼成一个克制的纸面隐喻，再用真实纸张质感、击凸与压凹工艺、灵活编辑排版和大量留白做成艺术画册封面或独立杂志封面。",
+      "anchors": [
+        "authentic cotton or art-paper surface with visible fiber, tooth, and studio side-lighting",
+        "letterpress-like emboss and deboss as the only physical relief, not cut-paper layers or plastic 3D type",
+        "one restrained visual metaphor expressed as a single paper-relief graphic",
+        "editorial typography that participates in composition through split lines, offset, edge placement, mixed orientation, or embedding into the graphic",
+        "1-2 main colors plus optional micro accent, with large negative space as a compositional actor"
+      ],
+      "adaptation": [
+        "derive one high-impact visual title when the source title is long, while preserving the complete title as secondary microtype",
+        "randomly recombine typeface family, type hierarchy, title placement, composition logic, metaphor, palette, and emboss/deboss assignment for each new cover",
+        "recompose title scale, graphic placement, whitespace, reading path, and relief direction for every target ratio",
+        "for a requested multi-size suite, keep metaphor, paper material, and palette identity consistent, but invent a new editorial layout for each ratio instead of cropping"
+      ],
+      "preserve": [
+        "real paper relief with crisp impression edges, natural paper thickness, and soft side-light shadows",
+        "exactly one main graphic metaphor and a clear three-level type hierarchy",
+        "text-image inseparability: title, graphic, and whitespace must form one editorial sentence",
+        "quiet independent-magazine / art-book-cover temperament rather than a generic poster template"
+      ],
+      "avoid": [
+        "plastic 3D modeling, metal engraving, foil stamping as the main look, neon, glossy CGI, or exaggerated extrusion",
+        "layered paper-cut diorama, collage, illustration clutter, or multiple competing subjects",
+        "always-left or always-centered title templates, PPT covers, e-commerce ads, and fabricated editorial filler",
+        "misspellings, unreadable titles, dense gradients, or more than two dominant colors plus one accent"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张可用于封面或海报的极简纸面工艺作品。核心视觉语言是：真实纸张质感、高级击凸与压凹、文字参与构图、一个克制视觉隐喻，以及艺术画册 / 独立杂志封面气质。画面不是普通海报排版，而是由文字、图形、留白和纸面起伏共同写成的视觉句子。"
+        },
+        {
+          "title": "概念提炼",
+          "body": "- 先理解主题真正表达的核心情绪、关系、动作、状态或概念，不要只做字面名词堆砌。\n- 只保留 1 个主图形隐喻，必要时最多再加 1–2 个极少量辅助元素。图形必须极简，不复杂，不堆砌。\n- 可选隐喻方向包括但不限于：圆、半圆、路径、台阶、门、窗、月亮、太阳、山、波纹、书、本子、植物、花、叶子、石头、鸟、猫、鱼、蝴蝶、箭头、问号、钥匙孔、楼梯、跑道、靶心、星点、地平线、地图折角、胶片、咖啡杯、呼吸线条、几何切面。\n- 将“必须出现”的内容并入同一个隐喻，不让它们变成并列素材清单；把“禁止出现”的内容合并进最终负面约束。\n- 不输出分析过程；主题理解、隐喻选择、构图和配色判断都在生成前内部完成。"
+        },
+        {
+          "title": "随机组合机制",
+          "body": "每次生成时必须自动随机组合以下要素，并确保结果自然、高级、不模板化。参考图中的米白纸面、半圆弧、拆行衬线标题和左侧微型注释只是一种代表性实现，不是固定模板。\n\n1. 字体风格随机\n从以下方向中随机选择一种或混合两种：现代无衬线、优雅衬线、压缩体、细长体、高对比标题字、几何感字体、编辑感字体。字体必须有审美，不要呆板，不要像普通办公排版。\n\n2. 字号层级随机\n至少形成明显的三级层级：主标题大字、辅助文字中号、小注释或小标识微型字体。允许出现强烈的大小反差，让文字本身形成视觉张力。\n\n3. 标题排版方式随机\n不要固定左对齐、居中或底部标题。从以下方式中随机选择或组合：拆行排版、错位排版、跨区域排版、局部竖排、横竖混排、单词断行、字母拉开、局部重叠、沿边缘分布、标题嵌入图形、标题与留白形成借位关系。让文字本身参与构图，而不是贴在画面上。\n\n4. 构图方式随机\n从以下构图逻辑中随机选择：偏左留白、偏右留白、上重下轻、下重上轻、对角线构图、角落构图、中心偏移构图、上下分区、左右分区、模块化构图、边缘化构图、跨版构图。画面必须灵活，避免千篇一律。\n\n5. 主视觉隐喻随机\n根据主题自动提炼 1 个核心视觉隐喻，只保留 1 个主图形。图形必须与标题发生关系：环绕、嵌入、借位、切断、托住、穿过或成为字的舞台。\n\n6. 颜色方案随机\n颜色控制在 1–2 种主色内，可带极少量点睛色。优先参考：红+白、黄+深蓝、黑+金、米白+黑、米白+深蓝、森林绿+米白、粉+酒红、浅蓝+白、橙+深棕、灰白+红点缀、午夜蓝+金色。避免复杂渐变和多色混乱。\n\n7. 击凸压凹关系随机\n让一部分标题文字使用击凸，一部分图形使用压凹，或相反处理。也可以让部分元素与背景同色，仅通过纸面起伏和侧光来呈现。边缘压痕必须清晰，纸张厚度自然，阴影细腻，光线柔和。\n\n8. 辅助元素随机\n允许极少量辅助排版元素：编号、小圆点、细线、短横线、括号、坐标感标记、微型说明文字、英文小注释、日期、页码感信息。辅助元素只能点到为止，不能喧宾夺主，不得虚构品牌或无意义出版信息。"
+        },
+        {
+          "title": "Less is More",
+          "body": "- 每个元素都必须增强主题、构图、层次、阅读或情绪；否则删除。\n- 不要因为画面有空白就补装饰。留白本身承担节奏、气质和阅读分区。\n- 辅助信息宁少勿多，不堆砌物件、图标、标签或编辑小字。\n- 主视觉只有一个，不平均分配视觉重量，不填满整个画面。"
+        },
+        {
+          "title": "真实纸张与击凸压凹",
+          "body": "- 画面必须像真实棉纸、艺术纸或厚卡纸经过击凸与压凹后，再由专业摄影棚用柔和侧光拍摄。\n- 清楚表现纸面纤维、轻微齿感、压痕边缘、纸张厚度、同色浮雕、浅接触阴影和侧光形成的起伏。\n- 击凸是纸面被顶起，压凹是纸面被压入。两者都可以与背景同色，靠光影而不是额外描边成立。\n- 纸面保持哑光、细腻和可触摸；不要塑料感，不要夸张 3D 建模感，不要金属雕刻感，不要烫金主导，不要剪纸层叠装置。"
+        },
+        {
+          "title": "图文融合",
+          "body": "- 标题不能悬浮贴在插画上。让文字成为纸面结构本身：嵌入图形、沿弧线或边缘分布、被留白借位、局部重叠，或成为击凸 / 压凹的主体。\n- 图像、文字和所有纸面起伏必须共享同一侧光、投影方向、透视和空间尺度。\n- 如果标题短，直接强化完整主标题；如果标题长，提炼一个最有冲击力的核心词作为第一视觉，并把完整标题保留为第二层信息。\n- 根据文字模式决定是否显示完整标题、核心标题、只预留文字区或完全无文字。用户提供的文字必须准确，中文和英文排版都要自然，不得生成错字、乱码或错误英文。\n- 最终图像应像一句由纸面起伏、图形隐喻和标题共同写成的视觉化句子。"
+        },
+        {
+          "title": "比例、尺寸与套图",
+          "body": "- 画幅决定构图，不是生成后再裁切。每个比例都重新调整标题位置、图形尺度、留白、阅读方向和压痕延伸方向。\n- 横向画面强化左右分区、跨版弧线和横向阅读；纵向画面强化上下重量、竖排或角落构图；方形画面强化中心偏移和留白借位；超宽或超长画面减少信息，只保留单一视觉关系。\n- 用户指定输出尺寸时，在保持目标比例的同时遵循该尺寸；不要通过拉伸、补边或机械裁切适配。\n- 多尺寸套图必须保持同一主题、隐喻、纸张材质和配色识别，但为每个比例分别发明新的编辑构图。每个尺寸输出独立成图，不要合并成拼图、联系表或样机。"
+        },
+        {
+          "title": "情绪与色彩",
+          "body": "- 情感倾向决定整体气质，不对应固定物件或符号。用户选择多个情绪时，确定一个主情绪，其余只作为辅助或反差。\n- 色彩建立为纸面底色、主色和极少量点睛色。未指定时，根据主题、隐喻和主情绪从经典双色方案中选择一套。\n- 用户指定多个色彩方向时，将其整理成一套协调配色，不要把所有方向同时塞进画面。\n- 避免廉价渐变、无逻辑撞色和全画面高饱和。颜色的多少不等于层次的多少。"
+        },
+        {
+          "title": "光影与构图",
+          "body": "- 使用柔和、统一的侧光或棚拍斜光。阴影只用于表现纸张厚度、压痕深度、遮挡和空间层级。\n- 阴影应自然、细腻、方向一致，不要过硬、过黑或戏剧化到破坏纸张质感。\n- 视觉层级为：核心标题或主图形 → 辅助文字 → 微型标识 → 留白。确保第一眼知道看哪里，第二眼理解文字与纸面起伏之间发生的关系。\n- 整体气质必须安静、现代、克制、聪明、高级，接近艺术画册封面、独立杂志、设计书封或现代视觉海报。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要普通扁平插画、儿童剪纸、纸雕层叠场景、拼贴、复杂背景或图文分离。\n- 不要塑料 3D、金属雕刻、夸张挤出字、霓虹、烫金主导、全息膜或廉价 CG 感。\n- 不要每次都把标题放左边或中间，不要 PPT 模板、电商海报、课程封面或信息图。\n- 不要错字乱码、虚构品牌刊号、硬阴影、黑死阴影、复杂渐变或多色混乱。\n- 不要机械裁切、拉伸、补边、样机展示、拼图、网格、联系表或多方案对比。"
+        },
+        {
+          "title": "最终标准",
+          "body": "最终画面必须同时具备：极简构图、灵活排版、字体变化、视觉隐喻、纸张质感、击凸压凹工艺、高级编辑设计感。少但不空，简但不弱；压痕真实，隐喻准确，标题清楚，留白高级，光影自然，配色克制。\n\n每个目标比例只生成一张独立最终成图。不要输出分析、解释、提示词复述或备选方案。"
+        }
+      ]
+    },
+    {
+      "id": "research-journal-concept",
+      "name": "科研期刊概念",
+      "description": "科研期刊封面式概念视觉，强调机制、材料、医学、生物、工程和实验室语境。用专业但可传播的科学隐喻组织画面。",
+      "anchors": [
+        "top-tier research journal cover mood",
+        "original scientific main visual with mechanism implication",
+        "microscopic or macroscopic scientific metaphor",
+        "advanced color system with depth and precision",
+        "sparse editorial text integrated into scientific composition"
+      ],
+      "adaptation": [
+        "main title should be treated as journal-cover title or restrained editorial text around the scientific visual",
+        "subtitle should be minimal and placed with scientific margins or grid logic",
+        "visual metaphor should become a scientific object, structure, field, network, mechanism, or section"
+      ],
+      "preserve": [
+        "scientific subject or mechanism relevance",
+        "non-template journal-cover sophistication",
+        "no copied real journal identity"
+      ],
+      "avoid": [
+        "real journal names, logos, or fixed official layouts",
+        "random DNA, chips, lab equipment, or blue-purple tech background",
+        "dense explanatory mechanism diagram"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张科研期刊封面式概念视觉。风格核心是原创科学主视觉、机制暗示、材料或生命科学质感、高级配色和专业编辑版式。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 视觉像顶级科研期刊封面，但不复制真实期刊名、Logo、官方识别元素或固定版式。\n- 主体可来自细胞、蛋白、神经网络、材料晶格、微流控、药物递送、机器人系统、光学结构、生态模型、能量场或工程剖面。\n- 画面应暗示研究对象和机制，而不是画完整实验流程。\n- 可使用微观世界、宏观隐喻、结构剖面、悬浮主体、科学装置、光场、粒子、透明材料和高精度渲染。\n- 配色可以克制高级，也可以高饱和科研封面色，但必须有层次和专业感。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 标题和副标题像科研编辑版式的一部分，少量、清楚、留白得当。\n- 科学主体必须与主题机制相关，不能只是抽象科技背景。\n- 若需要文字，文字应避开主体关键结构，并与网格、边距和视觉焦点协调。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要直接模仿真实期刊封面。\n- 不要使用普通蓝紫科技背景、随机 DNA、随机芯片或无关实验器材。\n- 不要把科学机制画成密集说明图。"
+        }
+      ]
+    },
+    {
+      "id": "retro-diffuse-gradient",
+      "name": "复古弥散渐变",
+      "description": "以柔和弥散色块、旧印刷颗粒、暗房显影和杂志网格形成复古氛围。适合情绪、艺术、设计、品牌和独立杂志式封面。",
+      "anchors": [
+        "soft diffuse color fields and blurred edges",
+        "vintage print grain, paper texture, scan noise, and darkroom development feel",
+        "independent magazine or experimental poster typography",
+        "variable layout, not a fixed left-title/right-circle template",
+        "abstract mood carried by color, texture, and restrained geometry"
+      ],
+      "adaptation": [
+        "main title should interact with diffuse fields through contrast, cutout, edge placement, grid, or atmospheric embedding",
+        "subtitle and small text should behave like magazine microtype, index marks, or minimal art-poster labels",
+        "visual metaphor should be translated into color atmosphere, blur, scanning, fog, or abstract field structure"
+      ],
+      "preserve": [
+        "visible diffuse gradient atmosphere with print texture",
+        "readable title",
+        "mature editorial order and variation"
+      ],
+      "avoid": [
+        "cheap rainbow gradient or generic bokeh background",
+        "fixed left-title plus right-circle composition",
+        "concrete face or character unless explicitly requested"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张复古弥散渐变编辑海报。风格核心是柔和色域、旧印刷颗粒、暗房显影、扫描失真、杂志网格和抽象情绪氛围。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 弥散色块、雾化边缘、旧海报暗角、纸张纹理、胶印颗粒、复印噪点、轻微扫描线和低保真数字质感。\n- 色彩可以高饱和强冲击、中饱和复古胶片、低饱和雾面艺术、单色渐变、双色冲突或意外实验配色。\n- 弥散结构应变化：横向扫描、纵向雾柱、中央留白、边缘压迫、大色块模糊、波纹地形、高噪点喷砂、暗部显影、几何切割或纯色雾面。\n- 画面可加入极少量圆形、矩形、线条、波纹、暗纹大字或索引式小字。\n- 整体像 Risograph、旧海报、独立杂志、实验音乐海报或高级品牌视觉。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题应清晰，与弥散色域形成强对比或柔和嵌合。\n- 文字排版可以巨型压迫、中央极简、边缘暗纹、杂志网格、竖排、斜排或小标题留白。\n- 背景暗纹和几何元素只能服务构图，不抢主标题。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要固定为左侧大标题加右侧圆形。\n- 不要使用廉价彩虹渐变、过多光斑或脏乱色块。\n- 不要出现具体人物脸，除非用户明确要求。"
+        }
+      ]
+    },
+    {
+      "id": "retro-ink-dot-matrix-metaphor",
+      "name": "复古油墨点阵隐喻",
+      "description": "复古油墨机械打印与极简点阵隐喻结合的封面海报。核心不是炫技插画，而是稳定的旧式打印版式、固定色彩、固定字体和一个小而明确的黑色点阵主体。",
+      "anchors": [
+        "fixed warm gray beige background #DED9CF",
+        "black retro ink letterpress title and restrained dark gray footer words",
+        "one small minimal dot-matrix metaphor illustration",
+        "fixed editorial layout by aspect ratio with generous negative space",
+        "old printer, lead type, archive title, and vintage technical magazine restraint"
+      ],
+      "adaptation": [
+        "landscape ratios use a fixed left-text and right-illustration composition",
+        "square and portrait ratios use a fixed top-text, middle-lower illustration, bottom-footer composition",
+        "title remains at fixed size for each ratio and never scales up to fill space",
+        "illustration stays small and secondary, occupying roughly 22-26% width in landscape or 25-32% height in square and portrait"
+      ],
+      "preserve": [
+        "background color #DED9CF without hue, brightness, gradient, paper stain, or texture drift",
+        "title and illustration color #111111, footer color #343434, no fourth color",
+        "same retro ink mechanical letterpress type family for all text",
+        "one readable main title, one optional footer word group, one simple metaphor illustration",
+        "fixed layout hierarchy, fixed title size, and strong whitespace"
+      ],
+      "avoid": [
+        "extra explanatory text, labels, subtitles, watermarks, logos, QR codes, numbering, or prompt text",
+        "high-saturation color, gradient, glow, 3D, photography, complex background, or heavy aging stains",
+        "modern geometric sans, pixel font, Songti, calligraphy, handwriting, or decorative distressed type",
+        "oversized illustration, crowded scene, multiple metaphors, or decorative filler objects"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张“复古油墨打印机 + 极简点阵隐喻”风格的封面海报。画面像复古科技杂志封面、旧式打印说明页或极简编辑海报：浅暖灰米色平底、深黑油墨铅字、偏小的黑色点阵插图、固定留白和克制信息层级。稳定性高于风格发挥，不能因为主题不同而改变字体、颜色、字号比例、版式结构或插图体量。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 背景固定为纯色浅暖灰米色 `#DED9CF`，必须平整、统一、干净；不得偏黄、偏白、偏灰、偏粉，不得出现渐变、光影过渡、明显纸纹、大面积噪点、做旧污渍或局部脏污。\n- 主标题与插图固定使用深黑色 `#111111`；底部短词固定使用深灰色 `#343434`；整张图只允许这三种颜色，不新增第四种颜色。\n- 所有文字使用同一套复古油墨机械铅字字体。字形略窄、方正、机械、稳定，带轻微油墨扩散和老式打印不均匀感，像旧式打字机、铅字报刊、档案标题。\n- 主标题使用该字体体系的粗体版本；底部短词使用同一字体体系的细体版本。不要换成现代几何黑体、像素字体、宋体、书法字体、手写字体或夸张破损字。\n- 标题字号按画幅固定，不因标题长短自动放大或缩小；主标题最多两行，不得压满画面，也不得为了填满文字区而变大。\n- 底部短词字号固定为主标题字号约 23%，字距约为正常字距的 1.15 倍；最多 3 组短词，用中点分隔；用户未填写时留空，不自动补词。"
+        },
+        {
+          "title": "固定尺寸与字号",
+          "body": "- `5:2`：画布 `2000 x 800`，主标题 `72px`，行高 `76px`。\n- `16:9`：画布 `1920 x 1080`，主标题 `84px`，行高 `89px`。\n- `3:2`：画布 `1800 x 1200`，主标题 `88px`，行高 `93px`。\n- `4:3`：画布 `1600 x 1200`，主标题 `88px`，行高 `93px`。\n- `1:1`：画布 `1600 x 1600`，主标题 `96px`，行高 `102px`。\n- `4:5`：画布 `1600 x 2000`，主标题 `104px`，行高 `110px`。\n- `3:4`：画布 `1500 x 2000`，主标题 `104px`，行高 `110px`。\n- `9:16`：画布 `1080 x 1920`，主标题 `108px`，行高 `114px`。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 横版比例 `5:2`、`16:9`、`3:2`、`4:3` 使用左文右图结构。左侧文字区约占画面宽度 52%，右侧插图区约占 22%-26%；主标题在左侧文字区中上部，底部短词在左侧底部，插图在右侧中部并垂直居中。\n- `5:2` 横版中，主标题文字框宽度固定为画面宽度的 38%-42%，左边距为画面宽度的 7%-9%，主标题总高度不得超过画面高度的 24%，上下留白必须充足。\n- 方形与竖版比例 `1:1`、`4:5`、`3:4`、`9:16` 使用上文下图结构。主标题位于上方偏中区域，插图位于中下部，底部短词位于最下方安全区域。\n- 文字区与插图区之间必须保留明显空白。插图必须偏小，不喧宾夺主；横版保持右侧小主体，方形与竖版占画面高度约 25%-32%。\n- 画面中只允许出现一个主标题、一个极简隐喻插图、一组可留空的底部短词。不要显示主题说明、隐喻解释、备注、功能列表、编号、标签、副标题、大段正文、额外英文说明、水印、Logo 或二维码。"
+        },
+        {
+          "title": "隐喻与插图",
+          "body": "- 先理解主题核心意思，再提炼一个最简单、最直接、一眼可识别的视觉隐喻。每张图只保留一个核心主体，或两个物体之间最简单的关系。\n- 插图只使用黑色圆点、稀疏线性点阵和少量油墨网点构成，像寥寥几笔完成的点阵速写。\n- 主体只保留外部轮廓、一个主要动作、一至两个身份特征；不刻画复杂材质、复杂背景、复杂阴影、过多内部零件、无关小物件或场景叙事。\n- 插图必须明确但不能复杂，宁小勿大，宁简勿繁。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要高饱和颜色、渐变、发光、3D、写实摄影、复杂背景或大面积做旧污渍。\n- 不要自动添加说明文字，不要自动改变字体，不要自动放大标题。\n- 不要让插图过大，不要让画面过满，不要堆叠多个概念或多个主体。"
+        }
+      ]
+    },
+    {
+      "id": "retro-japanese-sci-fi-anime-cover",
+      "name": "复古日本科幻动画",
+      "description": "以 90 年代日本科幻赛璐璐动画和标题卡气质为视觉骨架，用高饱和限色色块、锋利线稿、硬边阴影、夸张透视和高对比标题制造紧张、决断、启动与重组感。",
+      "anchors": [
+        "1990s Japanese sci-fi cel animation keyframe energy",
+        "title-card-like high-contrast serif typography as the first visual",
+        "saturated hard-edge color blocks with strict limited palette",
+        "sharp hand-drawn linework, cel shadows, exaggerated perspective, and dramatic contrast",
+        "one metaphor, one main subject, one active transformation or conflict",
+        "light film grain and retro animation still texture"
+      ],
+      "adaptation": [
+        "wide covers should use left-title-right-visual or right-title-left-visual tension with horizontal motion and depth",
+        "square and 4:3 covers should use offset, diagonal, or layered title-image composition rather than equal split blocks",
+        "vertical covers should use top-title-bottom-visual, side vertical title, or vertical subject movement",
+        "redesign composition for each ratio instead of cropping a single layout"
+      ],
+      "preserve": [
+        "accurate, complete, readable main title as the first visual",
+        "one visual center, one core metaphor, and one main action",
+        "strict palette selected from the defined colors with uneven color area distribution",
+        "retro cel animation keyframe feeling with hard shadows and high contrast",
+        "safe margins for title, key action, and auxiliary text"
+      ],
+      "avoid": [
+        "copied characters, mecha designs, logos, titles, or scenes from existing anime works",
+        "3D render, photorealism, modern cyberpunk, flat corporate tech illustration, or generic UI style",
+        "average use of all palette colors or large gradients",
+        "static posing, decorative symbols, crowded UI, multiple metaphors, or multiple visual centers",
+        "ordinary sans-serif, rounded, or modern UI typography"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张具有 90 年代日本科幻赛璐璐动画关键帧感的封面。风格核心是标题卡式第一视觉、强烈限色、高饱和纯色色块、锋利手绘线稿、硬边赛璐璐阴影、夸张透视、强烈明暗对比和轻微胶片颗粒。可以借鉴复古科幻动画标题卡、紫绿机甲配色和赛璐璐质感的视觉语言，但不能复制任何既有作品的角色、机体、标志、标题或具体场景。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 先理解主题的核心矛盾、情绪和动作，再转化为 1 个核心隐喻、1 个主要主体和 1 个正在发生的动作。\n- 每张图只允许 1 个视觉中心、1 个核心隐喻、1 个主要主体和 1 个主要动作；删除会分散注意力的第二概念。\n- 画面必须具有高饱和纯色色块、锋利手绘线稿、硬边赛璐璐阴影、夸张透视、强烈明暗对比、轻微胶片颗粒和复古动画关键帧感。\n- 只从以下颜色中选择：深紫色 #5F2A62、荧光绿色 #8BD450、深蓝黑色 #1D1A2F、警示黄色 #F5C024、亮紫色 #965FD4、经典橙色 #F47A16、少量黑色和米白色。\n- 每张图只使用 1 个主背景色、1 个次级主色和 1 个小面积强调色；不要平均使用全部颜色，不要增加其他颜色，不要大面积渐变。\n- 自动判断主体类型时，人物、心理、情绪、关系、社会、成长类主题优先使用人物；AI、工具、技能、系统、方法、代码、产品、知识类主题优先使用无人物画面，或人物与装置交互。\n- 有人物时，人物必须处在明确动作和处境中，例如挣脱、拉扯、切断、穿越、推动、阻挡、启动或重组；不要静止摆拍，不要复制既有动画角色造型。\n- 无人物时，不能出现人物、人体剪影、手部或人脸；使用代码、页面、文件、卡片、模块、装置或空间结构表达主题，并表现展开、转化、爆发、拼合、穿越、启动或重组。\n- 无人物画面不要只放静止图标、圆环、门、立方体或代码符号；主体结构必须正在变化。\n- 只有主题涉及循环、持续迭代、长期主义、无限可能或自我进化时，才允许使用 infinity 符号；它必须成为场景结构、运动轨迹或系统闭环的一部分，不能只是装饰。\n- 构图必须根据画幅比例重新设计，不直接裁切同一张图。横版优先左标题右画面或右标题左画面，强调横向运动和空间纵深；方形或 4:3 使用上下错位或对角穿插；竖版优先上标题下画面、侧边纵排标题或主体沿纵向空间运动。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题必须是第一视觉，准确、完整、清晰可读，不能贴边；缩小后仍能看清。\n- 中文标题使用修长、锋利、高对比的明朝体、宋体或 Mincho 风格；英文标题使用 Didot、Bodoni 或 Mincho 式高对比衬线体。\n- 标题可以分行、纵排、错位或与画面穿插，但不能牺牲字形识别；标题气质应接近复古科幻动画标题卡，而不是普通黑体、圆体或现代 UI 字体。\n- 除主标题外，最多只允许 1 行副标题或 1 行极小英文短句。\n- 不要出现编号、日期、版本号、条形码、参数、步骤列表、信息卡片、大量小字或复杂 UI。\n- 所有文字处于安全区域，关键动作不被裁切，画面只保留一个视觉中心。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要 3D、摄影写实、现代赛博朋克、普通扁平插画或企业科技风。\n- 不要复制任何具体动画作品的角色、机体、标志、标题、台词或具体场景。\n- 不要使用普通黑体、圆体、现代 UI 字体或弱标题层级。\n- 不要平均使用全部固定颜色，不要添加其他颜色，不要使用大面积渐变。\n- 不要静止摆拍、无动作主体、装饰性符号堆叠或多个视觉中心。\n- 不要让辅助信息超过一行，不要用复杂 UI 或大量小字解释主题。"
+        }
+      ]
+    },
+    {
+      "id": "retro-torn-collage",
+      "name": "复古手撕拼贴",
+      "description": "手撕纸、旧报纸、胶带、半调网点和强标题排版组成的复古编辑拼贴。适合需要故事感、冲突感、街头感和社交传播力的内容。",
+      "anchors": [
+        "irregular torn paper edges",
+        "layered old newspaper and magazine scraps",
+        "visible tape strips, stickers, and paper shadows",
+        "photocopy grain, halftone dots, and ink misregistration",
+        "handwritten editorial marks and cutout headline pieces"
+      ],
+      "adaptation": [
+        "main title should live on torn paper, cutout headline pieces, or rough printed scraps",
+        "subtitle and labels should appear as tape, notes, stamps, newspaper captions, or handwritten annotations",
+        "visual metaphor should be built from layered documents, photos, receipts, tags, and paper fragments"
+      ],
+      "preserve": [
+        "handmade collage materiality with real paper fibers, tears, folds, shadows, and overlap",
+        "strong readable title hierarchy inside the collage",
+        "designed editorial balance rather than random asset pileup"
+      ],
+      "avoid": [
+        "clean flat poster without torn edges",
+        "generic magazine layout with no handmade paper layering",
+        "smooth digital cards, flat red panels, or infographic templates"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张复古手撕拼贴编辑海报。风格核心是旧报纸、撕裂纸边、胶带、复印颗粒、半调网点、手写批注和强标题排版共同形成的杂志感视觉叙事。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 手撕纸、旧报纸、杂志切片、复印噪点、半调网点、胶带、贴纸、油墨错位和纸张阴影。\n- 拼贴应有“故意随意但设计平衡”的秩序：层次丰富，但主次清楚。\n- 画面可以像独立杂志、街头海报墙、复古电影海报、青年文化刊物或艺术展览海报。\n- 主图可使用物件切片、局部人物、城市碎片、符号、手写稿、编辑批注、剪开的标题或放大镜等元素。\n- 色彩可高对比也可复古低饱和，但必须有旧印刷质感。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 主标题可以印在撕纸上、被纸片局部遮挡、复印错位、叠印、压印、剪切或手写覆盖，但仍要醒目。\n- 小字系统可以像栏目名、日期、编号、报纸说明、手写批注或贴纸文字，但必须服务主题。\n- 图像、标题、纸片和标签要像共同讲述一个故事，而不是素材随机堆放。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要素材无序堆叠。\n- 不要让每个元素都抢主视觉。\n- 不要做成干净矢量拼图，必须保留纸张、撕裂和印刷痕迹。"
+        }
+      ]
+    },
+    {
+      "id": "semantic-minimal-translation",
+      "name": "语义转译极简",
+      "description": "把一个字、词、短句或口号转译成极简图形艺术海报。核心是语义理解、承载面、少量主体演绎和巨型文字骨架的咬合关系。",
+      "anchors": [
+        "one core word or short phrase translated into a visual sentence",
+        "giant readable core text as structure, stage, wall, container, or obstacle",
+        "minimal scene with 1-3 meaningful objects, people, or actions",
+        "strong negative space and 2-4 controlled colors",
+        "paper, print, or graphic-art texture kept restrained"
+      ],
+      "adaptation": [
+        "main title should be reduced to a powerful core word while the complete title is preserved in secondary text",
+        "subject must physically interact with the core text through scale, blocking, crossing, carrying, or entering",
+        "supporting text is allowed only when it directly clarifies the topic"
+      ],
+      "preserve": [
+        "text-image inseparability",
+        "semantic clarity of the translated concept",
+        "minimal composition without decorative filler"
+      ],
+      "avoid": [
+        "word pasted as a normal title over an illustration",
+        "random numbers, coordinates, or fake publication marks",
+        "crowded background or cheap gradient effects"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "把输入的词、短句或概念转译成一张高级极简图形海报。文字不是说明标签，图像也不是独立插画；文字、主体、承载面、空间关系和少量色彩必须共同构成一个准确表达语义的视觉句子。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 极简主场景，清晰承载面，1-3 个关键人物、物体或动作。\n- 巨型核心文字成为画面骨架，像墙体、舞台、屏障、地形、容器或情绪压力面。\n- 主体必须与文字发生关系：站在字前、嵌入字内、穿越字形、被字阻隔、依附承载面或借用负空间。\n- 配色控制在 2-4 种主色关系内，纸张感、印刷感、版画感、轻微颗粒和克制纹理优先。\n- 大面积留白可以存在，但留白必须服务语义张力。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 核心文字必须清晰可读，并成为第一视觉。\n- 辅助文字只在被允许时出现，且必须直接深化主题，不能使用随机编号、假出版信息、无关坐标或装饰性句子。\n- 若主题抽象，选择具体可见的对象和动作承载语义；若主题具体，通过尺度、距离、遮挡、对峙、给予、等待或穿越关系制造更深层含义。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要把词语当普通标题贴在插画上。\n- 不要让图像和文字分离。\n- 不要堆叠元素、复杂背景、廉价渐变或无意义装饰。"
+        }
+      ]
+    },
+    {
+      "id": "silver-foil-blue-minimal",
+      "name": "银色锡纸蓝字",
+      "description": "银色细纹锡纸背景与统一克莱因蓝文字线条组成的高级极简封面。适合把商业、成长、方法论、AI、系统和抽象观点压缩成一条清楚路径或一个简单关系，整体像高级独立杂志封面或当代设计展海报。",
+      "anchors": [
+        "realistic silver aluminum foil background with fine restrained wrinkles",
+        "unified deep Klein blue typography and line metaphor",
+        "modern medium-bold Chinese sans-serif title with generous spacing",
+        "one minimal line metaphor such as path, loop, node, entrance, step, or state change",
+        "premium independent magazine and contemporary design poster restraint"
+      ],
+      "adaptation": [
+        "landscape ratios prefer left-text and right-metaphor, top-bottom, or quiet centered layouts",
+        "portrait ratios prefer centered composition with title in the upper-middle and metaphor below",
+        "title remains moderate, readable, and inward-looking rather than huge or loud",
+        "metaphor occupies roughly 15%-25% of the image and stays secondary to the title"
+      ],
+      "preserve": [
+        "real silver foil texture across the whole background",
+        "one consistent deep Klein blue for all text, lines, and graphic elements",
+        "clear readable Chinese medium-bold sans-serif title",
+        "generous negative space and a single simple concept metaphor"
+      ],
+      "avoid": [
+        "liquid metal, mirror steel, holographic film, plastic film, futuristic armor, or cyberpunk styling",
+        "people, product photography, complex illustration, large blue blocks, glow, gradient, 3D text, or 3D icons",
+        "oversized title, crowded typography, diagonal layout, mixed horizontal-vertical typography, watermarks, or dense small text"
+      ],
+      "sections": [
+        {
+          "title": "视觉风格原子",
+          "body": "创作一张“银色细纹锡纸背景 + 统一克莱因蓝文字与线条”的高级极简封面。画面使用真实银色锡纸作为完整背景，像轻微揉皱后重新铺平的铝箔，拥有细密、均匀、自然、克制的褶皱纹理、冷银色金属质感、细腻反光、柔和高光和轻微明暗变化。视觉吸引力来自真实锡纸纹理、统一深邃蓝色、清楚舒展的文字排版和一个简洁准确的主题隐喻。"
+        },
+        {
+          "title": "风格基因",
+          "body": "- 背景必须是覆盖整张画面的真实银色锡纸，不留纯色空底。锡纸纹理清晰但不能过粗、过亮、过乱；文字所在区域保持相对平整，避免高光、暗纹或复杂褶皱穿过文字。\n- 整张图只使用两种核心颜色：银色锡纸背景，以及纯正、深邃、统一的克莱因蓝文字与线条。所有蓝色文字、线条和图形必须是同一种蓝色，不得深浅不一致、发灰、发紫、局部渐变或发光。\n- 中文统一使用现代中粗黑体，不要过粗。字形简洁、笔画清楚、稳重现代、不拥挤，保持适度字距和行距；不使用书法体、圆体、卡通体和装饰字体。\n- 英文只作为辅助信息，使用粗体无衬线字体，字号明显小于中文，不抢主标题。\n- 主标题保持内敛，字号适中，以清楚易读为准，不占据大半画面。整体像高级独立杂志封面或当代设计展海报，而不是营销海报。"
+        },
+        {
+          "title": "图文关系",
+          "body": "- 每张图只采用一种主要排版方式：左对齐、右对齐、居中对齐、上下两行或三行、两端对齐、一侧文字一侧隐喻图形。不要斜排、横竖混排、复杂错位、大面积水印字或花哨排版。\n- 横版优先使用左右构图、上下构图或简洁居中构图。左文右图时，标题在一侧保持舒展，隐喻线条在另一侧保持轻量，二者之间留出明确空白。\n- 竖版优先使用居中构图，标题位于画面中上部，隐喻位于标题下方，整体稳定、对称、留白充分。\n- 文字必须行距舒展、字距自然、四周留白充足、每行长度相对均衡；不故意裁切、不堆叠、不重叠、不拥挤。\n- 画面中只保留银色细纹锡纸背景、克莱因蓝主标题、一行可选副标题或英文辅助文字、一个与主题直接相关的极简线条隐喻。"
+        },
+        {
+          "title": "隐喻与图形",
+          "body": "- 根据主题提取一个最核心、最容易理解的概念，设计成一个克莱因蓝极简线条隐喻。\n- 隐喻可以是路径、回路、节点、阶梯、入口、连接、输入与输出、从旧状态到新状态的变化、从起点到目标的过程。\n- 隐喻只表达一个核心概念，线条简洁、直观、准确；不要复杂插画，不堆叠多个图标，不加入大量说明文字。\n- 图形面积控制在画面的 15%-25%，不能比标题更醒目。标题与隐喻之间保持明确距离，不重叠、不穿插、不互相遮挡。"
+        },
+        {
+          "title": "风格特有禁用项",
+          "body": "- 不要人物、产品摄影、复杂插画、多个图标堆叠、复杂流程图或密集小字。\n- 不要液态金属、镜面钢板、镭射彩膜、塑料膜、未来科技装甲或赛博朋克。\n- 不要超大标题、超粗字体、文字拥挤、背景高光穿过文字、大面积水印字、斜排文字或横竖混排。\n- 不要蓝色深浅不统一、大面积蓝色色块、渐变、发光、立体字、3D 图标或花哨排版。"
+        }
+      ]
+    }
+  ]
+}

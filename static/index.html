@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cover Studio：生成封面、拆解图层，拖动调整后导出。">
+  <title>Cover Studio · 封面创作工作台</title>
+  <link rel="stylesheet" href="/style.css"><script src="/punk-cover.js" defer></script><script src="/ponyo-cover.js" defer></script><script src="/cloud.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a href="/" class="brand"><span class="brand-mark" aria-hidden="true">c.</span>COVER <span class="brand-light">STUDIO</span></a>
+  <ol class="flow" aria-label="创作流程"><li id="flow-1" class="on">01 生图</li><li id="flow-2">02 拆解</li><li id="flow-3">03 编辑导出</li></ol>
+  <div class="top-actions">
+    <button id="toggle-controls" class="quiet" aria-expanded="true" aria-controls="controls">收起左栏</button>
+    <button id="use-example" class="quiet">载入示例</button>
+    <button id="open-library" class="quiet" aria-expanded="false" aria-controls="asset-library">我的素材库</button>
+    <button id="settings" class="quiet" aria-expanded="false" aria-controls="key-panel">API 设置 <span id="key-dot" class="key-dot"></span></button>
+  </div>
+  <section id="key-panel" class="key-panel" hidden>
+    <h2>连接你的 MaaS API</h2>
+    <p>填入你自己的蚂蚁数科 MaaS API Key。仅在当前页面保留，刷新后需要重新填写。调用时通过本站转发给 MaaS。</p>
+    <label for="api-key">API key</label>
+    <div class="key-input"><input id="api-key" type="password" autocomplete="off" placeholder="粘贴你的 MaaS API Key" spellcheck="false"><button id="show-key" aria-label="显示 API key" class="quiet">显示</button></div>
+    <div class="key-actions"><button id="clear-key" class="quiet">清除 Key</button><button id="save-key" class="primary">完成</button></div>
+  </section>
+</header>
+<section id="asset-library" class="asset-library" aria-label="我的素材库" hidden>
+  <div class="library-head"><div><h2>我的素材库</h2><p>生成图片与拆层结果，自动保存在本机。</p></div><button id="close-library" class="quiet">关闭</button></div>
+  <div class="library-tools"><label for="library-filter">素材类型</label><select id="library-filter" class="size-select"><option value="all">全部素材</option><option value="generate">生成图片</option><option value="split">拆层结果</option></select><button id="refresh-library" class="quiet">刷新</button></div>
+  <p id="library-status" role="status"></p>
+  <button id="undo-delete" class="secondary" hidden>撤销删除</button>
+  <div id="asset-list" class="asset-list"></div>
+  <p class="storage-note" data-cloud-storage-note hidden>作品仅保存在当前浏览器，清理浏览器数据或更换设备后将无法查看，请及时下载。</p>
+</section>
+
+<main class="app" id="app">
+  <aside class="controls" id="controls">
+    <div class="tabbar" role="tablist" aria-label="创作模式"><button id="tab-generate" role="tab" aria-selected="true" aria-controls="generation-controls">生成</button><button id="tab-split" role="tab" aria-selected="false" aria-controls="split-controls">拆解</button></div>
+    <div id="generation-controls" class="control-body" role="tabpanel" aria-labelledby="tab-generate">
+      <span class="field-label category-label">创作品类</span>
+      <div class="purpose-row" role="radiogroup" aria-label="创作品类">
+        <button type="button" class="category-button" role="radio" aria-checked="true" data-purpose="cover"><strong>封面图</strong><span>文章封面</span></button>
+        <button type="button" class="category-button" role="radio" aria-checked="false" data-purpose="xhs"><strong>小红书</strong><span>笔记封面</span></button>
+        <button type="button" class="category-button" role="radio" aria-checked="false" data-purpose="ecommerce"><strong>电商海报</strong><span>产品设计</span></button>
+        <button type="button" class="category-button" role="radio" aria-checked="false" data-purpose="free"><strong>自由创作</strong><span>直接填词</span></button>
+      </div>
+      <details id="generation-settings" class="generation-settings"><summary><span id="category-setting-label">风格与标题设置</span><span>展开 ↗</span></summary>
+      <div class="settings-content">
+      <div id="style-settings">
+      <label class="field-label" for="style-select">风格 <span id="style-source"></span></label>
+      <select id="style-select" class="size-select"><option value="">不套风格 · 自由描述</option></select>
+      <p id="style-description" class="field-note style-description" hidden></p>
+      <div id="cover-fields" class="punk-fields" hidden>
+        <label class="field-label" for="cover-title">封面标题 <span id="title-hint"></span></label><input id="cover-title" class="size-select" maxlength="120" placeholder="例如：生成之后，还能接着改">
+        <label class="field-label" for="cover-context">补充描述 <span id="context-hint">可选</span></label><input id="cover-context" class="size-select" maxlength="800" placeholder="主题、读者或希望表现的画面">
+        <details id="xhs-extra" class="xhs-extra" hidden><summary>小红书更多设置</summary>
+          <label class="field-label" for="xhs-audience">目标读者</label><input id="xhs-audience" class="size-select" maxlength="120" value="刚开始做内容的创作者">
+          <label class="field-label" for="xhs-type">内容类型 <span>「按内容类型推荐」时生效</span></label><select id="xhs-type" class="size-select"><option value="tutorial">干货 / 教程 / 步骤</option><option value="knowledge">知识 / 观点 / AI 工具</option><option value="case">案例 / 结果 / 测评</option><option value="emotion">情感 / 生活 / 故事</option><option value="travel">旅行 / 家居 / Vlog</option><option value="lifestyle">穿搭 / 护肤 / 运动</option></select>
+          <label class="field-label" for="xhs-support">利益点 / 副标题</label><input id="xhs-support" class="size-select" maxlength="60" placeholder="一句话说明读者能得到什么">
+          <div class="xhs-pair"><div><label class="field-label" for="xhs-tag">分类标签</label><input id="xhs-tag" class="size-select" maxlength="20"></div><div><label class="field-label" for="xhs-account">账号署名</label><input id="xhs-account" class="size-select" maxlength="40" placeholder="留空不加"></div></div>
+          <label class="field-label" for="xhs-scene">主视觉描述</label><textarea id="xhs-scene" class="short-text" maxlength="1200" placeholder="例如：阳光下的街角、手拿咖啡的旅行者"></textarea>
+        </details>
+        <div id="xhs-plan" class="xhs-plan" hidden><span class="xhs-kicker">COVER PLAN</span><dl id="xhs-plan-list"></dl></div>
+      </div>
+      </div>
+      <p class="field-note punk-source">风格规则来源：<a href="https://github.com/adrianpunk/Punk-Skill/tree/v1.0.0-mit" target="_blank" rel="noopener noreferrer">Punk Skill ↗</a> · <a href="/punk-license.txt" target="_blank">许可</a> · <a href="https://github.com/ponyodong2026/ponyo-cover-anchor-system" target="_blank" rel="noopener noreferrer">波妞 PONYO ↗</a></p>
+      </div></details>
+      <section id="prompt-details" class="prompt-details">
+
+        <div class="prompt-heading"><label id="prompt-label" for="generate-prompt">画面描述</label><span id="prompt-count">0 字</span></div>
+        <div id="free-presets" class="preset-row"><button data-preset="poster" class="chip">示例：白茶海报</button><button data-preset="coffee" class="chip">示例：咖啡新品</button></div>
+        <div id="creative-presets" class="preset-row" hidden><button data-creative="landscape" class="chip">实例：湖畔晨光</button><button data-creative="illustration" class="chip">实例：橘猫咖啡店</button></div>
+        <textarea id="cover-prompt" class="category-prompt" maxlength="16000" placeholder="输入封面提示词，或展开上方设置选择风格。" hidden></textarea>
+        <textarea id="xhs-prompt" class="category-prompt" maxlength="16000" placeholder="输入小红书封面提示词，或使用模板生成。" hidden></textarea>
+        <textarea id="free-prompt" class="category-prompt" maxlength="16000" placeholder="直接输入你想生成的画面，也可以载入上面的实例。" hidden></textarea>
+        <textarea class="category-prompt" id="generate-prompt" maxlength="16000" placeholder="你想生成怎样的画面？描述主体、风格、构图与准确文案。"></textarea>
+        <button id="apply-style" class="secondary" hidden>按当前风格重新拼提示词</button>
+      </section>
+      <div class="generation-footer"><div class="ratio-row"><label class="field-label" for="generate-ratio">画面比例</label>
+      <select id="generate-ratio" class="size-select">
+        <option value="auto">自动</option><option value="1:1">1:1 · 方形</option>
+        <option value="9:16">9:16 · 竖屏</option><option value="16:9">16:9 · 横屏</option>
+        <option value="5:2">5:2 · 宽幅封面</option><option value="4:3">4:3 · 横版</option>
+        <option value="3:4">3:4 · 竖版</option>
+      </select>
+      </div>
+      <button id="generate" class="primary action">生成图片 <span>↗</span></button>
+      </div>
+    </div>
+    <div id="split-controls" class="control-body" role="tabpanel" aria-labelledby="tab-split" hidden>
+      <label class="upload" id="drop-zone" for="upload"><span class="upload-plus">＋</span><span class="upload-text"><strong>上传一张设计图</strong><small>点击或拖放 · PNG / JPEG / WebP · 最大 20 MB</small></span><input id="upload" type="file" accept="image/png,image/jpeg,image/webp"></label>
+      <label class="field-label" for="split-prompt">图层规划</label>
+      <textarea id="split-prompt" maxlength="16000"></textarea>
+      <button id="reset-split-prompt" type="button" class="quiet">恢复通用规划 ↺</button>
+      <p class="field-note">按遮挡关系从底层到顶层细分，可自行修改。右侧列表上层在上、背景在下；实际拆分与顺序需检查。</p>
+      <button id="split" class="primary action">拆解当前图片 <span>↗</span></button>
+    </div>
+    <div class="model-line"><span class="tiny-dot"></span><span id="model-name">Ming-Image-0.1-Design</span></div>
+  </aside>
+
+  <section class="stage-panel" aria-label="画布">
+    <div class="stage-bar">
+      <div class="stage-title"><span class="step" id="canvas-step">PREVIEW</span><span id="image-meta">等待你的第一张作品</span></div>
+      <div class="stage-actions">
+        <span id="editor-controls" class="edit-group" hidden>
+          <button id="undo" class="quiet" title="撤销（⌘Z / Ctrl+Z）">撤销</button>
+          <button id="redo" class="quiet" title="重做（⇧⌘Z / Ctrl+Shift+Z）">重做</button>
+          <i class="divider" aria-hidden="true"></i>
+          <button id="reset-layer" class="quiet">复位选中</button>
+          <button id="reset-all" class="quiet">全部复位</button>
+        </span>
+        <a id="download-original" class="quiet" hidden download="ming-image.png">下载原图 ↓</a>
+      </div>
+    </div>
+    <div class="canvas-stage" id="canvas-stage">
+      <div id="empty-state" class="empty-state">
+        <div class="empty-art" aria-hidden="true"><span></span><span></span><span></span></div>
+        <h1>从一个想法，到每一个图层<span class="accent">。</span></h1>
+        <p>生成一张新图，或载入示例，直接拖动拆出来的图层。</p>
+        <button id="example-cta" class="secondary">体验示例海报 ↗</button>
+      </div>
+      <img id="preview-image" alt="当前作品预览" hidden>
+      <canvas id="composition" hidden></canvas>
+      <button id="next-step" class="primary next-step" hidden>继续拆解图层 →</button>
+      <div id="busy-overlay" class="busy-overlay" hidden><div class="spinner"></div><h3 id="busy-title">正在生成你的画面</h3><p id="busy-detail">通常需要 30–90 秒，请保持页面打开。</p><span id="elapsed">0 秒</span></div>
+      <div id="status" role="status" aria-live="polite" hidden></div>
+    </div>
+    <div class="stage-foot"><strong id="selected-layer">生成或上传一张图开始</strong><span id="layer-position"></span><span id="canvas-caption" class="foot-hint"></span></div>
+    <p class="storage-note" data-cloud-storage-note hidden>作品仅保存在当前浏览器，清理浏览器数据或更换设备后将无法查看，请及时下载。</p>
+  </section>
+
+  <aside id="layers-section" class="layers-panel" aria-label="图层" hidden>
+    <div class="lp-head">
+      <div><span class="step">LAYERS</span><h2 id="layer-count">图层</h2><p id="layer-summary"></p></div>
+      <div class="lp-tools"><button id="select-all" class="quiet">全部显示</button><button id="reverse-stack" class="quiet">反转顺序 ⇅</button></div>
+      <label class="scale-control" for="layer-scale">图层缩放 <span><input id="layer-scale" type="number" min="10" max="400" step="1" value="100" disabled> %</span></label>
+      <p class="layer-note">按住左侧手柄上下拖动可调整顺序，上方图层覆盖下方。右键图层有更多操作。</p>
+    </div>
+    <div id="layer-list" class="layer-list"></div>
+    <div class="lp-foot">
+      <p class="layer-note" id="layer-note">文字图层是像素图片。主体分离与背景补全效果因画面而异。</p>
+      <label class="field-label export-label" for="output-ratio">画布与导出尺寸</label>
+      <select id="output-ratio" class="size-select">
+        <option value="auto">原图尺寸</option><option value="1:1">1:1 · 1600 × 1600</option>
+        <option value="9:16">9:16 · 1080 × 1920</option><option value="16:9">16:9 · 1920 × 1080</option>
+        <option value="5:2">5:2 · 1500 × 600</option><option value="4:3">4:3 · 1600 × 1200</option>
+        <option value="3:4">3:4 · 1200 × 1600</option>
+      </select>
+      <p class="layer-note">完整保留画面，不拉伸；比例不一致时留白适配。</p>
+      <button id="export-composite" class="primary">导出当前画面 ↓</button>
+      <a id="download-zip" class="secondary" download>原始图层 ZIP ↓</a>
+    </div>
+  </aside>
+</main>
+<div id="layer-menu" class="layer-menu" role="menu" aria-label="图层操作" hidden>
+  <button role="menuitem" data-action="top">置顶</button>
+  <button role="menuitem" data-action="up">上移一层</button>
+  <button role="menuitem" data-action="down">下移一层</button>
+  <button role="menuitem" data-action="bottom">置底</button>
+  <hr>
+  <button role="menuitem" data-action="hide">隐藏</button>
+  <button role="menuitem" data-action="lock">锁定</button>
+  <button role="menuitem" data-action="reset">复位位置和大小</button>
+  <button role="menuitem" data-action="download">下载这一层</button>
+</div>
+</body></html>

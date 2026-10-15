@@ -1,0 +1,15 @@
+{
+  "name": "cover-studio",
+  "main": "cloudflare/worker.mjs",
+  "compatibility_date": "2026-10-15",
+  "assets": {
+    "directory": "./static",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "observability": {
+    "enabled": false
+  }
+}
